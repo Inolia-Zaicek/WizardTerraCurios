@@ -1,0 +1,15 @@
+{
+"item.wizard_terra_cuiros.iron_mana_band":"Mana Regeneration Band",
+"item.wizard_terra_cuiros.iron_mana_flower":"Mana Flower",
+"item.wizard_terra_cuiros.iron_mana_cloak":"Mana Cloak",
+"item.wizard_terra_cuiros.iron_magic_cuffs":"Mana Cuffs",
+"item.wizard_terra_cuiros.iron_celestial_magnet":"Celestial Magnet",
+"item.wizard_terra_cuiros.iron_celestial_cuffs":"Celestial Cuffs",
+"item.wizard_terra_cuiros.iron_magnet_flower":"Magnetic Flower",
+"item.wizard_terra_cuiros.iron_celestial_emblem":"Celestial Emblem",
+"item.wizard_terra_cuiros.iron_arcane_flower":"Arcane Mana Flower",
+"tooltip.wizard_terra_cuiros.iron_mana_flower.text":"§eWhen mana is below §950§9%%§e, it will automatically consume §9Arcane Essence§e from the backpack to restore §925 mana§9+§95§9%%§9 of maximum mana, but will gain 5 seconds of §9Mana Sickness§e\n§e(§9Mana Sickness§e — reduces §925§9%%§e of §9Iron Magic Spell Damage§e)",
+"tooltip.wizard_terra_cuiros.iron_magic_cuffs.text":"Restores [damage amount * 10] mana when injured",
+"effect.wizard_terra_cuiros.mana_sickness":"Mana Sickness",
+"item_group.wizard_terra_cuiros.tab":"Terra Curio Expansion"
+}

@@ -1,0 +1,18 @@
+{
+    "replace": false,
+    "values": [
+        "wizard_terra_cuiros:ring_of_ultimate_discount",
+
+        "wizard_terra_cuiros:ring_of_lesser_mana_boost",
+        "wizard_terra_cuiros:ring_of_greater_mana_boost",
+        "wizard_terra_cuiros:ring_of_ultimate_mana_boost",
+
+        "wizard_terra_cuiros:ring_of_lesser_mana_regen",
+        "wizard_terra_cuiros:ring_of_greater_mana_regen",
+        "wizard_terra_cuiros:ring_of_ultimate_mana_regen",
+
+        "wizard_terra_cuiros:ring_of_lesser_iron_spell",
+        "wizard_terra_cuiros:ring_of_greater_iron_spell",
+        "wizard_terra_cuiros:ring_of_ultimate_iron_spell"
+    ]
+}

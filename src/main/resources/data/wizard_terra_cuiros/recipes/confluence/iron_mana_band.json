@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "irons_spellbooks:arcane_essence"
+        },
+        "B": {
+            "item": "confluence:band_of_regeneration"
+        }
+    },
+    "result": {
+        "item": "wizard_terra_cuiros:iron_mana_band",
+        "count": 1
+    }
+}

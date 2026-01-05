@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:iron_mana_band"
+        },
+        {
+            "item": "confluence:shackle"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:iron_magic_cuffs"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:iron_mana_flower"
+        },
+        {
+            "item": "confluence:putrid_scent"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:iron_arcane_flower"
+    }
+}

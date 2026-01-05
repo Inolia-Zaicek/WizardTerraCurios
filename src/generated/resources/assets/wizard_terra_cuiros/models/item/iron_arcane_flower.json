@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "wizard_terra_cuiros:item/iron_arcane_flower"
+  }
+}

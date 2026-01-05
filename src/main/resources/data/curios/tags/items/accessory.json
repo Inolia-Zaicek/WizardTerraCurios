@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "confluence"
+    }
+  ],
+  "values": [
+    "wizard_terra_cuiros:iron_mana_band",
+    "wizard_terra_cuiros:iron_mana_flower",
+    "wizard_terra_cuiros:iron_mana_cloak",
+    "wizard_terra_cuiros:iron_magic_cuffs",
+    "wizard_terra_cuiros:iron_celestial_magnet",
+    "wizard_terra_cuiros:iron_celestial_cuffs",
+    "wizard_terra_cuiros:iron_magnet_flower",
+    "wizard_terra_cuiros:iron_celestial_emblem",
+    "wizard_terra_cuiros:iron_arcane_flower"
+  ]
+}

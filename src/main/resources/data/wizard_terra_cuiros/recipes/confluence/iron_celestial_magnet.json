@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " A ",
+        "ABA",
+        " A "
+    ],
+    "key": {
+        "A": {
+            "item": "irons_spellbooks:arcane_essence"
+        },
+        "B": {
+            "item": "confluence:treasure_magnet"
+        }
+    },
+    "result": {
+        "item": "wizard_terra_cuiros:iron_celestial_magnet",
+        "count": 1
+    }
+}

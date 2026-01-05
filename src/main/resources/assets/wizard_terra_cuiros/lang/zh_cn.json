@@ -1,0 +1,16 @@
+{
+"item.wizard_terra_cuiros.iron_mana_band":"法力再生手环",
+"item.wizard_terra_cuiros.iron_mana_flower":"法力花",
+"item.wizard_terra_cuiros.iron_mana_cloak":"法力斗篷",
+"item.wizard_terra_cuiros.iron_magic_cuffs":"法力手铐",
+"item.wizard_terra_cuiros.iron_celestial_magnet":"天界磁石",
+"item.wizard_terra_cuiros.iron_celestial_cuffs":"天界手铐",
+"item.wizard_terra_cuiros.iron_magnet_flower":"法力磁花",
+"item.wizard_terra_cuiros.iron_celestial_emblem":"天界徽章",
+"item.wizard_terra_cuiros.iron_arcane_flower":"法力奥术花",
+
+"tooltip.wizard_terra_cuiros.iron_mana_flower.text": "§e法力值低于§950§9%%§e时，会自动消耗背包内的§9奥术源质§e，回复§925法力值§9+§95§9%%§9最大法力值§9§e，但会获得5s的§9法力病效果\n§e(§9法力病§e——降低§925§9%%§e的§9铁魔法法术伤害§e)",
+"tooltip.wizard_terra_cuiros.iron_magic_cuffs.text": "受伤时回复[伤害数额*10]的法力",
+"effect.wizard_terra_cuiros.mana_sickness": "法力病",
+"item_group.wizard_terra_cuiros.tab":"泰拉饰品拓展"
+}
