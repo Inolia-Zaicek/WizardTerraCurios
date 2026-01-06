@@ -1,11 +1,18 @@
 package com.inolia_zaicek.wizard_terra_cuiros;
 
-import com.inolia_zaicek.wizard_terra_cuiros.Event.HurtEvent;
-import com.inolia_zaicek.wizard_terra_cuiros.Event.IronHurtEvent;
+import com.inolia_zaicek.wizard_terra_cuiros.Config.WTCConfig;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Ars.ArsHurtEvent;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Ars.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Iron.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Iron.IronPlayerTickEvent;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczHurtEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.ModelProvider.ZeroingModRecipesGen;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCEEffectsRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.Tab;
+import com.inolia_zaicek.wizard_terra_cuiros.loot.ModLootModifiers;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -14,7 +21,9 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -28,6 +37,8 @@ public class WizardTerraCurios {
     public static final String MODID = "wizard_terra_cuiros";
     public WizardTerraCurios() {
         init();
+        ModLoadingContext modLoadingContext = ModLoadingContext.get();
+        modLoadingContext.registerConfig(ModConfig.Type.COMMON, WTCConfig.SPEC);
     }
 
     public void init(){
@@ -35,15 +46,27 @@ public class WizardTerraCurios {
         // 注册 Item、Tab、Entity 类型
         Tab.register(bus);
         WTCItemRegister.register(bus);
+        ModLootModifiers.register(bus);
         WTCEEffectsRegister.INOEFFECT.register(bus);
         // 注册 CommonSetup 事件
         bus.addListener(this::commonSetup);
         // !!! 注册 ClientSetup 事件 !!!
         bus.addListener(this::clientSetup);
         MinecraftForge.EVENT_BUS.register(HurtEvent.class);
+        WTCAttributes.ATTRIBUTES.register(bus);
+        MinecraftForge.EVENT_BUS.register(WTCEntityAttributeGiveEvent.class);
+        MinecraftForge.EVENT_BUS.register(DropsEvent.class);
         //铁魔法增幅
         if(ModList.get().isLoaded("irons_spellbooks")) {
             MinecraftForge.EVENT_BUS.register(IronHurtEvent.class);
+            MinecraftForge.EVENT_BUS.register(IronPlayerTickEvent.class);
+        }
+        if(ModList.get().isLoaded("ars_nouveau")) {
+            MinecraftForge.EVENT_BUS.register(ArsHurtEvent.class);
+            MinecraftForge.EVENT_BUS.register(ArsPlayerTickEvent.class);
+        }
+        if(ModList.get().isLoaded("tacz")) {
+            MinecraftForge.EVENT_BUS.register(TaczHurtEvent.class);
         }
     }
 

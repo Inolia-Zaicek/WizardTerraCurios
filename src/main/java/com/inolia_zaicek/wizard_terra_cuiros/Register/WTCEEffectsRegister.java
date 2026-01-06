@@ -1,6 +1,6 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Register;
 
-import com.inolia_zaicek.wizard_terra_cuiros.Register.buff.ManaSicknessBuff;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.buff.*;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,4 +13,5 @@ public class WTCEEffectsRegister {
     public static final DeferredRegister<MobEffect> INOEFFECT = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS,MODID);
     //决斗
     public static final RegistryObject<MobEffect> ManaSickness = INOEFFECT.register("mana_sickness", ManaSicknessBuff::new);
+    public static final RegistryObject<MobEffect> ManaPolarization = INOEFFECT.register("mana_polarization", ManaPolarizationBuff::new);
 }

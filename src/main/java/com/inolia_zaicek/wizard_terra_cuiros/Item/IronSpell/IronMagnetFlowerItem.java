@@ -2,6 +2,8 @@ package com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell;
 
 import com.google.common.collect.Multimap;
 import com.hollingsworth.arsnouveau.common.items.curios.DiscountRing;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
+import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -39,5 +41,9 @@ public class IronMagnetFlowerItem extends Item implements ICurioItem {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
         attributes.put(ModAttributes.PICKUP_RANGE.get(), new AttributeModifier(uuid, getTooltipItemName(), 10.75F, AttributeModifier.Operation.ADDITION));
         return attributes;
+    }
+    @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronMagnetFlower.get());
     }
 }

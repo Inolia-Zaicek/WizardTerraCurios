@@ -2,28 +2,25 @@
     "conditions": [
         {
             "type": "forge:mod_loaded",
-            "modid": "confluence"
+            "modid": "irons_spellbooks"
         }
     ],
     "type": "minecraft:crafting_shaped",
     "pattern": [
+        " A ",
         "ABA",
-        "ACA",
-        "AAA"
+        " A "
     ],
     "key": {
         "A": {
             "item": "irons_spellbooks:arcane_essence"
         },
         "B": {
-            "item": "minecraft:blue_orchid"
-        },
-        "C": {
-            "item": "minecraft:glass_bottle"
+            "item": "confluence:treasure_magnet"
         }
     },
     "result": {
-        "item": "wizard_terra_cuiros:iron_mana_flower",
+        "item": "wizard_terra_cuiros:iron_celestial_magnet",
         "count": 1
     }
 }

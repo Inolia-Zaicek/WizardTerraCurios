@@ -1,6 +1,8 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell;
 
 import com.google.common.collect.Multimap;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
+import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.ai.attributes.Attribute;
@@ -25,5 +27,9 @@ public class IronManaBandItem extends Item implements ICurioItem {
         attributes.put((Attribute) AttributeRegistry.MAX_MANA.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.1, AttributeModifier.Operation.MULTIPLY_TOTAL));
         attributes.put((Attribute) AttributeRegistry.MANA_REGEN.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.05, AttributeModifier.Operation.MULTIPLY_BASE));
         return attributes;
+    }
+    @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronManaBand.get());
     }
 }

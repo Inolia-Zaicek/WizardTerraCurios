@@ -2,7 +2,7 @@
     "conditions": [
         {
             "type": "forge:mod_loaded",
-            "modid": "confluence"
+            "modid": "irons_spellbooks"
         }
     ],
     "type": "minecraft:crafting_shaped",
@@ -16,11 +16,11 @@
             "item": "irons_spellbooks:arcane_essence"
         },
         "B": {
-            "item": "confluence:treasure_magnet"
+            "item": "confluence:band_of_regeneration"
         }
     },
     "result": {
-        "item": "wizard_terra_cuiros:iron_celestial_magnet",
+        "item": "wizard_terra_cuiros:iron_mana_band",
         "count": 1
     }
 }

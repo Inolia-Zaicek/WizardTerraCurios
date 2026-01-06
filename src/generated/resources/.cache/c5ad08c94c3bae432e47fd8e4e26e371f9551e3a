@@ -1,4 +1,7 @@
-// 1.20.1	2026-01-04T23:39:33.2667443	Item Models: wizard_terra_cuiros
+// 1.20.1	2026-01-06T16:51:21.1448321	Item Models: wizard_terra_cuiros
+322860c50639336072782f98822c3f338773f43a assets/wizard_terra_cuiros/models/item/chaos_stone.json
+6a6142a93fa848666f177af7e457504c4e61ec37 assets/wizard_terra_cuiros/models/item/doom_emblem.json
+4e87dbbc27fce10f69e05340ed94a9d80cecf7f6 assets/wizard_terra_cuiros/models/item/hercules_beetle.json
 35ec0e4ddc75c6b00d87669a217d963e819dd22e assets/wizard_terra_cuiros/models/item/iron_arcane_flower.json
 cc16588479675dfc5acd30ad91114d7cc2e03560 assets/wizard_terra_cuiros/models/item/iron_celestial_cuffs.json
 821551f468e1fac3d7cbda90e3518ed698a9eeee assets/wizard_terra_cuiros/models/item/iron_celestial_emblem.json
@@ -8,3 +11,9 @@ cc16588479675dfc5acd30ad91114d7cc2e03560 assets/wizard_terra_cuiros/models/item/
 682537bfd84a1f4d2bf98280d83d4386c388916b assets/wizard_terra_cuiros/models/item/iron_mana_band.json
 6bc9ca0cee095ae6c0ec734cfa512e6fb2bab335 assets/wizard_terra_cuiros/models/item/iron_mana_cloak.json
 229d90ccddf710475348792493a885568ed43cf2 assets/wizard_terra_cuiros/models/item/iron_mana_flower.json
+38085642e0d8bfba82c704aba2938c959ca60904 assets/wizard_terra_cuiros/models/item/mana_polarizer.json
+b9c35e890e5cb01900b9ab7f6505df6f145585e5 assets/wizard_terra_cuiros/models/item/necromantic_scroll.json
+9c83334462c0fccd8395e4d7beaa45561a0cab42 assets/wizard_terra_cuiros/models/item/papyrus_scarab.json
+383f22d32b39c1a7f9a264869bbee1700ba4f1df assets/wizard_terra_cuiros/models/item/summoner_emblem.json
+a2a1110dee0cc6807ffc628612f5242f550f290b assets/wizard_terra_cuiros/models/item/the_community.json
+8c2221b09bed055430e70077171fcfa9500c82b0 assets/wizard_terra_cuiros/models/item/uniter_emblem.json

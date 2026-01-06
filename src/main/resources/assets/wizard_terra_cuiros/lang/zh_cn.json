@@ -1,16 +1,48 @@
 {
-"item.wizard_terra_cuiros.iron_mana_band":"法力再生手环",
-"item.wizard_terra_cuiros.iron_mana_flower":"法力花",
-"item.wizard_terra_cuiros.iron_mana_cloak":"法力斗篷",
-"item.wizard_terra_cuiros.iron_magic_cuffs":"法力手铐",
-"item.wizard_terra_cuiros.iron_celestial_magnet":"天界磁石",
-"item.wizard_terra_cuiros.iron_celestial_cuffs":"天界手铐",
-"item.wizard_terra_cuiros.iron_magnet_flower":"法力磁花",
-"item.wizard_terra_cuiros.iron_celestial_emblem":"天界徽章",
-"item.wizard_terra_cuiros.iron_arcane_flower":"法力奥术花",
+"item.wizard_terra_cuiros.iron_mana_band":"§b法力再生手环",
+"item.wizard_terra_cuiros.iron_mana_flower":"§b法力花",
+"item.wizard_terra_cuiros.iron_mana_cloak":"§b法力斗篷",
+"item.wizard_terra_cuiros.iron_magic_cuffs":"§b法力手铐",
+"item.wizard_terra_cuiros.iron_celestial_magnet":"§b天界磁石",
+"item.wizard_terra_cuiros.iron_celestial_cuffs":"§b天界手铐",
+"item.wizard_terra_cuiros.iron_celestial_emblem":"§b天界徽章",
+"item.wizard_terra_cuiros.iron_arcane_flower":"§b法力奥术花",
+
+"item.wizard_terra_cuiros.summoner_emblem":"§g召唤师徽章",
+"item.wizard_terra_cuiros.uniter_emblem":"§e联合者徽章",
+"item.wizard_terra_cuiros.doom_emblem":"§g灭绝者徽章",
+
+"item.wizard_terra_cuiros.necromantic_scroll":"§6死灵卷轴",
+"item.confluence.necromantic_scroll.info":"它可以在下界要塞的宝箱中找到。",
+
+"item.wizard_terra_cuiros.hercules_beetle":"§e大力士甲虫",
+"item.confluence.hercules_beetle.info":"它可以在末地城的宝箱中找到。",
+
+"item.wizard_terra_cuiros.papyrus_scarab":"§6甲虫莎草纸",
+
+"item.wizard_terra_cuiros.chaos_stone":"§4混乱石",
+"tooltip.wizard_terra_cuiros.chaos_stone.text":"法力病不再减少铁魔法伤害，但状态期间视为§4-2.0§9自然生命回复",
+"tooltip.wizard_terra_cuiros.chaos_stone.ars_text":"[魔艺拓展]魔源病不再减少铁魔法伤害，但状态期间视为§4-2.0§9自然生命回复(不与法力病叠加)",
+"item.confluence.chaos_stone.info":"它必定从末影龙身上掉落。",
+
+"item.wizard_terra_cuiros.mana_polarizer":"§9魔能谐振仪",
+"tooltip.wizard_terra_cuiros.mana_polarizer.text":"造成原版魔法伤害时，回复[伤害数额10%%]的生命值",
+"tooltip.wizard_terra_cuiros.mana_polarizer.iron_text":"造成铁魔法法术伤害时，回复[当前法力值百分比*伤害数额10%%]的生命值",
+"tooltip.wizard_terra_cuiros.mana_polarizer.ars_text":"造成魔符伤害时，回复[当前魔源百分比*伤害数额10%%]的生命值",
+"tooltip.wizard_terra_cuiros.mana_polarizer.tooltip_text":"安装§e铁魔法/新生魔艺§f时，若当前§e法力/魔源皆大于50%%§f，则视为§4-0.3§9自然生命回复",
+"item.confluence.mana_polarizer.info":"它必定从凋零身上掉落。",
+
+"item.wizard_terra_cuiros.the_community":"§e归一心元石",
+"tooltip.wizard_terra_cuiros.the_community.text":"获得所有属性的微量增幅，属性增幅会随着游戏进程增幅变得更加强力\n§7每击杀一个精英敌人/BOSS，提升0.25%暴击率+0.5%近战/魔法/远程伤害+0.25%召唤伤害+0.5%最大生命值+0.25%伤害减免+0.5护甲值+1%移动速度+0.03自然生命再生",
 
 "tooltip.wizard_terra_cuiros.iron_mana_flower.text": "§e法力值低于§950§9%%§e时，会自动消耗背包内的§9奥术源质§e，回复§925法力值§9+§95§9%%§9最大法力值§9§e，但会获得5s的§9法力病效果\n§e(§9法力病§e——降低§925§9%%§e的§9铁魔法法术伤害§e)",
 "tooltip.wizard_terra_cuiros.iron_magic_cuffs.text": "受伤时回复[伤害数额*10]的法力",
+"tooltip.wizard_terra_cuiros.the_community.text_count":"当前强敌击杀数：§e%s",
+
+"death.attack.truedamage": "%1$s的生命完全升华为了魔力。",
+"wizard_terra_cuiros.natural_life_regeneration":"自然生命回复速率",
+"wizard_terra_cuiros.summon_damage":"召唤伤害",
+"wizard_terra_cuiros.damage_reduction":"伤害减免",
 "effect.wizard_terra_cuiros.mana_sickness": "法力病",
 "item_group.wizard_terra_cuiros.tab":"泰拉饰品拓展"
 }

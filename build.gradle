@@ -135,7 +135,7 @@ dependencies {
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
-    //implementation fg.deobf("blank:jei-1.20.1:forge-15.20.0.112")
+    //implementation fg.deobf("blank:jei-1.20.1:forge-15.20.0.112")compileOnly
     implementation fg.deobf("blank:architectury-1.20.1:1")
     implementation fg.deobf("blank:jade-1.20.1:1")
     implementation fg.deobf("blank:jei-1.20.1:1")
@@ -154,6 +154,8 @@ dependencies {
     implementation fg.deobf("blank:irons_spellbooks-1.20.1:1")
     implementation fg.deobf("blank:playeranimator-1.20.1:1")
     implementation fg.deobf("blank:TerraCurio-1.20.1:1")
+    implementation fg.deobf("blank:touhoulittlemaid-1.20.1:1")
+    implementation fg.deobf("blank:tacz-1.20.1:1")
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")

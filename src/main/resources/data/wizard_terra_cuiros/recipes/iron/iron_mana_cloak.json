@@ -2,7 +2,7 @@
     "conditions": [
         {
             "type": "forge:mod_loaded",
-            "modid": "confluence"
+            "modid": "irons_spellbooks"
         }
     ],
     "type": "confluence:workshop",
@@ -11,10 +11,10 @@
             "item": "wizard_terra_cuiros:iron_mana_flower"
         },
         {
-            "item": "wizard_terra_cuiros:iron_celestial_magnet"
+            "item": "confluence:star_cloak"
         }
     ],
     "result": {
-        "item": "wizard_terra_cuiros:iron_magnet_flower"
+        "item": "wizard_terra_cuiros:iron_mana_cloak"
     }
 }

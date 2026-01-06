@@ -2,19 +2,19 @@
     "conditions": [
         {
             "type": "forge:mod_loaded",
-            "modid": "confluence"
+            "modid": "irons_spellbooks"
         }
     ],
     "type": "confluence:workshop",
     "ingredients": [
         {
-            "item": "wizard_terra_cuiros:iron_mana_flower"
+            "item": "confluence:avenger_emblem"
         },
         {
-            "item": "confluence:star_cloak"
+            "item": "wizard_terra_cuiros:iron_celestial_magnet"
         }
     ],
     "result": {
-        "item": "wizard_terra_cuiros:iron_mana_cloak"
+        "item": "wizard_terra_cuiros:iron_celestial_emblem"
     }
 }

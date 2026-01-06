@@ -1,6 +1,7 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Register;
 
 import com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
@@ -32,12 +33,21 @@ public class WTCItemRegister {
     //tag
     public static final TagKey<Item> copper = TagKey.create(Registries.ITEM,new ResourceLocation("forge","ingots/copper"));
 
+    public static RegistryObject<Item> TheCommunity=registerCommonMaterials(ConfluenceITEM,"the_community", TheCommunityItem::new);
+    public static RegistryObject<Item> ManaPolarizer=registerCommonMaterials(ConfluenceITEM,"mana_polarizer", ManaPolarizerItem::new);
+    public static RegistryObject<Item> SummonerEmblem=registerCommonMaterials(ConfluenceITEM,"summoner_emblem", SummonerEmblemItem::new);
+    public static RegistryObject<Item> UniterEmblem=registerCommonMaterials(ConfluenceITEM,"uniter_emblem", UniterEmblemItem::new);
+    public static RegistryObject<Item> DoomEmblem=registerCommonMaterials(ConfluenceITEM,"doom_emblem", DoomEmblemItem::new);
+    public static RegistryObject<Item> NecromanticScroll=registerCommonMaterials(ConfluenceITEM,"necromantic_scroll", NecromanticScrollItem::new);
+    public static RegistryObject<Item> HerculesBeetle=registerCommonMaterials(ConfluenceITEM,"hercules_beetle", HerculesBeetleItem::new);
+    public static RegistryObject<Item> PapyrusScarab=registerCommonMaterials(ConfluenceITEM,"papyrus_scarab", PapyrusScarabItem::new);
+    public static RegistryObject<Item> ChaosStone=registerCommonMaterials(ConfluenceITEM,"chaos_stone", ChaosStoneItem::new);
     //铁魔法联动饰品
     public static RegistryObject<Item> IronManaBand;
     public static RegistryObject<Item> IronManaFlower;
     public static RegistryObject<Item> IronManaCloak;
     public static RegistryObject<Item> IronMagicCuffs;
-    public static RegistryObject<Item> IronCelestialMagnet=registerCommonMaterials(ConfluenceITEM,"iron_celestial_magnet", IronCelestialMagnetItem::new);
+    public static RegistryObject<Item> IronCelestialMagnet;
     public static RegistryObject<Item> IronCelestialCuffs;
     public static RegistryObject<Item> IronMagnetFlower;
     public static RegistryObject<Item> IronCelestialEmblem;
@@ -51,7 +61,7 @@ public class WTCItemRegister {
             IronManaFlower=registerCommonMaterials(ConfluenceITEM,"iron_mana_flower", IronManaFlowerItem::new);
             IronManaCloak=registerCommonMaterials(ConfluenceITEM,"iron_mana_cloak", IronManaCloakItem::new);
             IronMagicCuffs=registerCommonMaterials(ConfluenceITEM,"iron_magic_cuffs", IronMagicCuffsItem::new);
-            //IronCelestialMagnet=registerCommonMaterials(ConfluenceITEM,"iron_celestial_magnet", IronCelestialMagnetItem::new);
+            IronCelestialMagnet=registerCommonMaterials(ConfluenceITEM,"iron_celestial_magnet", IronCelestialMagnetItem::new);
             IronCelestialCuffs=registerCommonMaterials(ConfluenceITEM,"iron_celestial_cuffs", IronCelestialCuffsItem::new);
             IronMagnetFlower=registerCommonMaterials(ConfluenceITEM,"iron_magnet_flower", IronMagnetFlowerItem::new);
             IronCelestialEmblem=registerCommonMaterials(ConfluenceITEM,"iron_celestial_emblem", IronCelestialEmblemItem::new);

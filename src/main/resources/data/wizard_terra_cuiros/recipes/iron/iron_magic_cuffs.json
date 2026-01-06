@@ -2,7 +2,7 @@
     "conditions": [
         {
             "type": "forge:mod_loaded",
-            "modid": "confluence"
+            "modid": "irons_spellbooks"
         }
     ],
     "type": "confluence:workshop",

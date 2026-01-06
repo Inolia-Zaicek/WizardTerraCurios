@@ -1,19 +1,24 @@
 {
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "confluence"
-    }
-  ],
   "values": [
-    "wizard_terra_cuiros:iron_mana_band",
-    "wizard_terra_cuiros:iron_mana_flower",
-    "wizard_terra_cuiros:iron_mana_cloak",
-    "wizard_terra_cuiros:iron_magic_cuffs",
-    "wizard_terra_cuiros:iron_celestial_magnet",
-    "wizard_terra_cuiros:iron_celestial_cuffs",
-    "wizard_terra_cuiros:iron_magnet_flower",
-    "wizard_terra_cuiros:iron_celestial_emblem",
-    "wizard_terra_cuiros:iron_arcane_flower"
+    {"id":"wizard_terra_cuiros:the_community","required":false},
+    {"id":"wizard_terra_cuiros:mana_polarizer","required":false},
+
+    {"id":"wizard_terra_cuiros:iron_mana_band","required":false},
+    {"id":"wizard_terra_cuiros:iron_mana_flower","required":false},
+    {"id":"wizard_terra_cuiros:iron_mana_cloak","required":false},
+    {"id":"wizard_terra_cuiros:iron_magic_cuffs","required":false},
+    {"id":"wizard_terra_cuiros:iron_celestial_magnet","required":false},
+    {"id":"wizard_terra_cuiros:iron_celestial_cuffs","required":false},
+    {"id":"wizard_terra_cuiros:iron_magnet_flower","required":false},
+    {"id":"wizard_terra_cuiros:iron_celestial_emblem","required":false},
+    {"id":"wizard_terra_cuiros:iron_arcane_flower","required":false},
+
+    {"id":"wizard_terra_cuiros:summoner_emblem","required":false},
+    {"id":"wizard_terra_cuiros:uniter_emblem","required":false},
+    {"id":"wizard_terra_cuiros:doom_emblem","required":false},
+    {"id":"wizard_terra_cuiros:necromantic_scroll","required":false},
+    {"id":"wizard_terra_cuiros:hercules_beetle","required":false},
+    {"id":"wizard_terra_cuiros:papyrus_scarab","required":false},
+    {"id":"wizard_terra_cuiros:chaos_stone","required":false}
   ]
 }

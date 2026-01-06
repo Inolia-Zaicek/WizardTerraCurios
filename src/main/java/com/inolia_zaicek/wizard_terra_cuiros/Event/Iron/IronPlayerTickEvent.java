@@ -1,6 +1,5 @@
-package com.inolia_zaicek.wizard_terra_cuiros.Event;
+package com.inolia_zaicek.wizard_terra_cuiros.Event.Iron;
 
-import com.inolia_zaicek.wizard_terra_cuiros.WizardTerraCurios;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCEEffectsRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
@@ -13,28 +12,28 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Objects;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE,modid = WizardTerraCurios.MODID)
-public class TickEvent {
+import static com.inolia_zaicek.wizard_terra_cuiros.Event.TickEvent.mana_polarizer_iron_nbt;
+
+public class IronPlayerTickEvent {
     @SubscribeEvent
     public static void playerOnTick(net.minecraftforge.event.TickEvent.PlayerTickEvent e) {
-        if (!e.player.getCommandSenderWorld().isClientSide) {
-            Player player = e.player;
-            var pmg = MagicData.getPlayerMagicData(player);
-            if (pmg != null) {
-                // 条件满足时，做额外检测
-                if (ModList.get().isLoaded("confluence")) {
-                    // 魔力花
-                    if (WTCUtil.isCurioEquipped(player, WTCItemRegister.IronManaFlower.get())
-                            || WTCUtil.isCurioEquipped(player, WTCItemRegister.IronManaCloak.get())
-                            || WTCUtil.isCurioEquipped(player, WTCItemRegister.IronMagnetFlower.get())
-                    ) {
-                        float maxMana = (float) player.getAttributeValue(AttributeRegistry.MAX_MANA.get());
-                        if (pmg.getMana() <= maxMana * 0.5F) {
+        if (ModList.get().isLoaded("irons_spellbooks")) {
+            if (!e.player.getCommandSenderWorld().isClientSide) {
+                Player player = e.player;
+                var pmg = MagicData.getPlayerMagicData(player);
+                if (pmg != null) {
+                    float maxMana = (float) player.getAttributeValue(AttributeRegistry.MAX_MANA.get());
+                    if (pmg.getMana() <= maxMana * 0.5F) {
+                        player.getPersistentData().putBoolean(mana_polarizer_iron_nbt,false);
+                        // 魔力花
+                        if (WTCUtil.isCurioEquipped(player, WTCItemRegister.IronManaFlower.get())
+                                || WTCUtil.isCurioEquipped(player, WTCItemRegister.IronManaCloak.get())
+                                || WTCUtil.isCurioEquipped(player, WTCItemRegister.IronMagnetFlower.get())
+                        ) {
                             // 新增的检测和消耗逻辑
                             boolean consumed = false;
 
@@ -85,6 +84,10 @@ public class TickEvent {
                                 player.addEffect(new MobEffectInstance(WTCEEffectsRegister.ManaSickness.get(), 100, 0));
                             }
                         }
+                    }
+                    //大于时，谐振判断
+                    else {
+                        player.getPersistentData().putBoolean(mana_polarizer_iron_nbt,true);
                     }
                 }
             }

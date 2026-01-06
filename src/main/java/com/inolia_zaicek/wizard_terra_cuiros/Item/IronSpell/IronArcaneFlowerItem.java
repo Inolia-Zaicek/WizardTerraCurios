@@ -1,6 +1,8 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell;
 
 import com.google.common.collect.Multimap;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
+import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -42,5 +44,9 @@ public class IronArcaneFlowerItem extends Item implements ICurioItem {
         attributes.put((Attribute) AttributeRegistry.MANA_REGEN.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.08, AttributeModifier.Operation.MULTIPLY_BASE));
         attributes.put(ModAttributes.AGGRO.get(), new AttributeModifier(uuid, getTooltipItemName(), -400, AttributeModifier.Operation.ADDITION));
         return attributes;
+    }
+    @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronArcaneFlower.get());
     }
 }

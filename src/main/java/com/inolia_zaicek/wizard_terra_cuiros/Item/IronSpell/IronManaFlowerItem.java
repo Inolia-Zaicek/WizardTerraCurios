@@ -1,6 +1,8 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell;
 
 import com.google.common.collect.Multimap;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
+import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -39,5 +41,9 @@ public class IronManaFlowerItem extends Item implements ICurioItem, IStarCloak {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
         attributes.put((Attribute) AttributeRegistry.MANA_REGEN.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.08, AttributeModifier.Operation.MULTIPLY_BASE));
         return attributes;
+    }
+    @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronManaFlower.get());
     }
 }

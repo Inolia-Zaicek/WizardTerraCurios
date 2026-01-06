@@ -1,6 +1,8 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell;
 
 import com.google.common.collect.Multimap;
+import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
+import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -39,5 +41,9 @@ public class IronMagicCuffsItem extends Item implements ICurioItem {
         pTooltipComponents.add(Component.translatable("tooltip.wizard_terra_cuiros.iron_magic_cuffs.text")
                 .withStyle(style -> style.withColor(ChatFormatting.WHITE)));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+    }
+    @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronMagicCuffs.get());
     }
 }
