@@ -5,7 +5,10 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "wizard_terra_cuiros.refmap.json",
   "mixins": [
-    "Jei.WTCModJeiPluginMixin"
+    "Jei.WTCModJeiPluginMixin",
+    "WTCSunStoneMixin",
+    "WTCMoonStoneMixin",
+    "WTCCelestialStoneMixin"
   ],
   "client": [
   ],

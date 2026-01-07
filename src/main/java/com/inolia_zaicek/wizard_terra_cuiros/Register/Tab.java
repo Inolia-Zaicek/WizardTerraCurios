@@ -24,7 +24,7 @@ public class Tab {
             //物品栏名称
             .title(Component.translatable(MoreModTetraTab))
             //图标
-            .icon(CurioItems.SORCERER_EMBLEM.get()::getDefaultInstance)
+            .icon(WTCItemRegister.TheCommunity.get()::getDefaultInstance)
             .displayItems((itemDisplayParameters, output) -> {
                 // 遍历 CommonItem 列表中的物品
                 for(RegistryObject<Item> curios: WTCItemRegister.CommonItem){

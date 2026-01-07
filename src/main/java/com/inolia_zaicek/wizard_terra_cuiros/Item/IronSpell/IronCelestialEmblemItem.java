@@ -25,7 +25,7 @@ public class IronCelestialEmblemItem extends Item implements ICurioItem {
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid, ItemStack stack) {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
         attributes.put(ModAttributes.PICKUP_RANGE.get(), new AttributeModifier(uuid, getTooltipItemName(), 10.75F, AttributeModifier.Operation.ADDITION));
-        attributes.put(ModAttributes.MAGIC_DAMAGE.get(), new AttributeModifier(uuid, getTooltipItemName(), 0.15F, AttributeModifier.Operation.MULTIPLY_TOTAL));
+        attributes.put(ModAttributes.getMagicDamage(), new AttributeModifier(uuid, getTooltipItemName(), 0.15F, AttributeModifier.Operation.MULTIPLY_TOTAL));
         return attributes;
     }
     @Override

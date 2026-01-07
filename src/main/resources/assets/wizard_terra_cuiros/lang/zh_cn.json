@@ -6,6 +6,7 @@
 "item.wizard_terra_cuiros.iron_celestial_magnet":"§b天界磁石",
 "item.wizard_terra_cuiros.iron_celestial_cuffs":"§b天界手铐",
 "item.wizard_terra_cuiros.iron_celestial_emblem":"§b天界徽章",
+"item.wizard_terra_cuiros.iron_magnet_flower":"§b磁花",
 "item.wizard_terra_cuiros.iron_arcane_flower":"§b法力奥术花",
 
 "item.wizard_terra_cuiros.summoner_emblem":"§g召唤师徽章",
@@ -13,10 +14,13 @@
 "item.wizard_terra_cuiros.doom_emblem":"§g灭绝者徽章",
 
 "item.wizard_terra_cuiros.necromantic_scroll":"§6死灵卷轴",
-"item.confluence.necromantic_scroll.info":"它可以在下界要塞的宝箱中找到。",
+"item.confluence.necromantic_scroll.info":"它可以在末地城的宝箱中找到。",
+
+"item.wizard_terra_cuiros.pygmy_necklace":"§a矮人项链",
+"item.confluence.pygmy_necklace.info":"它可以在丛林神庙的宝箱中找到。",
 
 "item.wizard_terra_cuiros.hercules_beetle":"§e大力士甲虫",
-"item.confluence.hercules_beetle.info":"它可以在末地城的宝箱中找到。",
+"item.confluence.hercules_beetle.info":"它可以在下界要塞的宝箱中找到。",
 
 "item.wizard_terra_cuiros.papyrus_scarab":"§6甲虫莎草纸",
 
@@ -32,17 +36,107 @@
 "tooltip.wizard_terra_cuiros.mana_polarizer.tooltip_text":"安装§e铁魔法/新生魔艺§f时，若当前§e法力/魔源皆大于50%%§f，则视为§4-0.3§9自然生命回复",
 "item.confluence.mana_polarizer.info":"它必定从凋零身上掉落。",
 
-"item.wizard_terra_cuiros.the_community":"§e归一心元石",
-"tooltip.wizard_terra_cuiros.the_community.text":"获得所有属性的微量增幅，属性增幅会随着游戏进程增幅变得更加强力\n§7每击杀一个精英敌人/BOSS，提升0.25%暴击率+0.5%近战/魔法/远程伤害+0.25%召唤伤害+0.5%最大生命值+0.25%伤害减免+0.5护甲值+1%移动速度+0.03自然生命再生",
+"item.wizard_terra_cuiros.the_community":"归一心元石",
+"tooltip.wizard_terra_cuiros.the_community.text":"获得所有属性的微量增幅，属性增幅会随着游戏进程增幅变得更加强力",
+"tooltip.wizard_terra_cuiros.the_community.text_2": "默认配置下，每击杀一个精英敌人/BOSS，提升[0.25%%暴击率+0.5%%近战/魔法/远程伤害+0.25%%召唤伤害+0.5%%最大生命值+0.25%%伤害减免+0.5%%护甲值+1%%移动速度+0.03%%自然生命再生]",
 
 "tooltip.wizard_terra_cuiros.iron_mana_flower.text": "§e法力值低于§950§9%%§e时，会自动消耗背包内的§9奥术源质§e，回复§925法力值§9+§95§9%%§9最大法力值§9§e，但会获得5s的§9法力病效果\n§e(§9法力病§e——降低§925§9%%§e的§9铁魔法法术伤害§e)",
 "tooltip.wizard_terra_cuiros.iron_magic_cuffs.text": "受伤时回复[伤害数额*10]的法力",
 "tooltip.wizard_terra_cuiros.the_community.text_count":"当前强敌击杀数：§e%s",
+"tooltip.wizard_terra_cuiros.the_community.text_max":"归一心元石的力量已达到了巅峰",
 
 "death.attack.truedamage": "%1$s的生命完全升华为了魔力。",
+
 "wizard_terra_cuiros.natural_life_regeneration":"自然生命回复速率",
 "wizard_terra_cuiros.summon_damage":"召唤伤害",
 "wizard_terra_cuiros.damage_reduction":"伤害减免",
 "effect.wizard_terra_cuiros.mana_sickness": "法力病",
+
+"item.wizard_terra_cuiros.bewitching_table":"施法桌",
+"tooltip.wizard_terra_cuiros.bewitching_table.text":"右键获得10min的[着魔]状态，提升5%%召唤伤害",
+"effect.wizard_terra_cuiros.bewitched": "着魔",
+"item.confluence.bewitching_table.info":"它有概率在唤魔者死亡时掉落。",
+
+"item.wizard_terra_cuiros.war_table":"战争桌",
+"tooltip.wizard_terra_cuiros.war_table.text":"右键获得10min的[战略家]状态，提升5%%召唤伤害",
+"effect.wizard_terra_cuiros.strategist": "战略家",
+"item.confluence.war_table.info":"它有概率在劫掠兽死亡时掉落。",
+
+"item.wizard_terra_cuiros.crystal_ball":"水晶球",
+"tooltip.wizard_terra_cuiros.crystal_ball.text":"右键获得10min的[灵视]状态，提升5%%魔法伤害，在安装铁魔法/新生魔艺时还会额外提升法力/魔源上限",
+"effect.wizard_terra_cuiros.clairvoyance": "灵视",
+"item.confluence.crystal_ball.info":"它有概率在女巫死亡时掉落。",
+
+"item.wizard_terra_cuiros.slice_of_cake":"蛋糕块",
+"tooltip.wizard_terra_cuiros.slice_of_cake.text":"右键获得10min的[糖果冲刺]状态，提升20%%移动速度与方块破坏速度",
+"effect.wizard_terra_cuiros.sugar_rush": "糖果冲刺",
+
+"item.wizard_terra_cuiros.sharpening_station":"利器站",
+"tooltip.wizard_terra_cuiros.sharpening_station.text":"右键获得10min的[锋利]状态，提升12点近战护甲穿透",
+"effect.wizard_terra_cuiros.sharpened": "锋利",
+
+"item.wizard_terra_cuiros.heart_lantern":"红心灯笼",
+"tooltip.wizard_terra_cuiros.heart_lantern.text":"右键获得10min的[心灯]状态，提升0.2自然生命再生",
+"effect.wizard_terra_cuiros.heart_lamp": "心灯",
+
+"item.wizard_terra_cuiros.campfire":"篝火",
+"tooltip.wizard_terra_cuiros.campfire.text":"右键获得10min的[温馨之火]状态，提升0.1自然生命再生",
+"effect.wizard_terra_cuiros.cozy_fire": "温馨之火",
+
+"item.wizard_terra_cuiros.bast_statue":"巴斯特雕像",
+"tooltip.wizard_terra_cuiros.bast_statue.text":"右键获得10min的[巴斯特防御]状态，提升5护甲值",
+"effect.wizard_terra_cuiros.the_bast_defense": "巴斯特防御",
+"item.confluence.bast_statue.info":"它可以在沙漠神殿的宝箱中找到。",
+
+"item.wizard_terra_cuiros.garden_gnome":"花园侏儒",
+"tooltip.wizard_terra_cuiros.garden_gnome.text":"右键获得10min的[好运]状态，提升0.2幸运值",
+"effect.wizard_terra_cuiros.lucky": "好运",
+"item.confluence.garden_gnome.info":"它可以在废弃矿井的宝箱中找到。",
+
+"item.wizard_terra_cuiros.bottled_honey":"瓶装蜂蜜",
+"tooltip.wizard_terra_cuiros.bottled_honey.text":"右键获得10min的[蜂蜜]状态，提升0.2自然生命再生，-10%%移动速度",
+"effect.wizard_terra_cuiros.honey": "蜂蜜",
+
+"item.wizard_terra_cuiros.arrow_stand":"箭架",
+"tooltip.wizard_terra_cuiros.arrow_stand.text":"右键获得10min的[箭术]状态，提升5%%远程伤害/弹射物伤害",
+"effect.wizard_terra_cuiros.archery": "箭术",
+
+"item.wizard_terra_cuiros.sunflower":"向日葵",
+"tooltip.wizard_terra_cuiros.sunflower.text":"右键获得10min的[快乐]状态，在提升10%%移动速度",
+"effect.wizard_terra_cuiros.happy": "快乐",
+
+"item.wizard_terra_cuiros.ammo_box":"弹药箱",
+"tooltip.wizard_terra_cuiros.ammo_box.text":"[TACZ联动]右键获得10min的[节约风气]状态，在使用枪械射击时有20%%几率不消耗弹药",
+"effect.wizard_terra_cuiros.ammo_box": "节约风气",
+
+"item.wizard_terra_cuiros.glyph_scribes_table":"魔符抄写台",
+"tooltip.wizard_terra_cuiros.glyph_scribes_table.text":"[新生魔艺联动]右键获得10min的[魔源]状态，提升2.5%%魔法伤害与5%%魔源上限",
+"effect.wizard_terra_cuiros.ars_source": "魔源",
+
+"item.wizard_terra_cuiros.arcane_scroll_forge":"奥术撰写台",
+"tooltip.wizard_terra_cuiros.arcane_scroll_forge.text":"[铁魔法联动]右键获得10min的[奥术]状态，提升2.5%%魔法伤害与5%%法力上限",
+"effect.wizard_terra_cuiros.iron_arcane": "奥术",
+
+"item.wizard_terra_cuiros.celestial_onion":"天体洋葱",
+"item.confluence.celestial_onion.tooltip":"永久增加配饰栏数量，前提是你已使用恶魔之心",
+"item.confluence.celestial_onion.info":"它必定从末影龙身上掉落。",
+
+"item.wizard_terra_cuiros.neptunes_shell":"§d海神贝壳",
+"tooltip.wizard_terra_cuiros.neptunes_shell.text":"入水时化身人鱼，提升50%%游泳速度并获得水下呼吸效果",
+"item.confluence.neptunes_shell.info":"它可以在沉船的宝箱中找到。",
+"effect.wizard_terra_cuiros.merfolk": "人鱼形态",
+
+"item.wizard_terra_cuiros.moon_charm":"月光护身符",
+"item.confluence.moon_charm.tooltip":"在夜晚时化身狼人，略微增强属性值",
+"tooltip.wizard_terra_cuiros.moon_charm.text":"在夜晚时化身狼人，略微增强属性值",
+"item.confluence.moon_charm.info":"它有概率在蝙蝠死亡时掉落。",
+
+"item.wizard_terra_cuiros.moon_shell":"月亮贝壳",
+"item.confluence.moon_shell.tooltip":"在夜晚时化身狼人，略微增强属性值",
+
+"item.wizard_terra_cuiros.celestial_shell":"天界壳",
+"item.wizard_terra_cuiros.iron_gold_crown":"泰拉之冠",
+"item.wizard_terra_cuiros.iron_tarnished_crown":"§7黯淡之冠",
+
 "item_group.wizard_terra_cuiros.tab":"泰拉饰品拓展"
 }

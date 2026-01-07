@@ -42,7 +42,7 @@ public class IronHurtEvent {
                         ||event.getSource().is(ISSDamageTypes.ELDRITCH_MAGIC)||event.getSource().is(ISSDamageTypes.ENDER_MAGIC)
                         ||event.getSource().is(ISSDamageTypes.NATURE_MAGIC)
                 ) {
-                    float damageUp = (float) attacker.getAttributeValue(ModAttributes.MAGIC_DAMAGE.get());
+                    float damageUp = (float) attacker.getAttributeValue(ModAttributes.getMagicDamage());
                     number *= damageUp;
                     //法力病
                     if (attacker.hasEffect(WTCEEffectsRegister.ManaSickness.get())&&!WTCUtil.isCurioEquipped(attacker, WTCItemRegister.ChaosStone.get())){
@@ -64,9 +64,6 @@ public class IronHurtEvent {
                             //判断魔力值
                             float maxMana = (float) player.getAttributeValue(AttributeRegistry.MAX_MANA.get());
                             manaNumber = MagicData.getPlayerMagicData(player).getMana()/maxMana;
-                            if(manaNumber>0.5){
-                                manaNumber*=0.75F;
-                            }
                         }
                         attacker.heal(damage*0.1F*manaNumber);
                     }

@@ -19,6 +19,15 @@
     {"id":"wizard_terra_cuiros:necromantic_scroll","required":false},
     {"id":"wizard_terra_cuiros:hercules_beetle","required":false},
     {"id":"wizard_terra_cuiros:papyrus_scarab","required":false},
-    {"id":"wizard_terra_cuiros:chaos_stone","required":false}
+    {"id":"wizard_terra_cuiros:chaos_stone","required":false},
+
+    {"id":"wizard_terra_cuiros:pygmy_necklace","required":false},
+    {"id":"wizard_terra_cuiros:neptunes_shell","required":false},
+    {"id":"wizard_terra_cuiros:moon_charm","required":false},
+    {"id":"wizard_terra_cuiros:moon_shell","required":false},
+    {"id":"wizard_terra_cuiros:celestial_shell","required":false},
+
+    {"id":"wizard_terra_cuiros:iron_gold_crown","required":false},
+    {"id":"wizard_terra_cuiros:iron_tarnished_crown","required":false}
   ]
 }

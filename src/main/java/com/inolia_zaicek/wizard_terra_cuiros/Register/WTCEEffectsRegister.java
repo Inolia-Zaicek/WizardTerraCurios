@@ -13,5 +13,20 @@ public class WTCEEffectsRegister {
     public static final DeferredRegister<MobEffect> INOEFFECT = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS,MODID);
     //决斗
     public static final RegistryObject<MobEffect> ManaSickness = INOEFFECT.register("mana_sickness", ManaSicknessBuff::new);
-    public static final RegistryObject<MobEffect> ManaPolarization = INOEFFECT.register("mana_polarization", ManaPolarizationBuff::new);
+    public static final RegistryObject<MobEffect> Bewitched = INOEFFECT.register("bewitched", BewitchedBuff::new);
+    public static final RegistryObject<MobEffect> Strategist = INOEFFECT.register("strategist", StrategistBuff::new);
+    public static final RegistryObject<MobEffect> Clairvoyance = INOEFFECT.register("clairvoyance", ClairvoyanceBuff::new);
+    public static final RegistryObject<MobEffect> SugarRush = INOEFFECT.register("sugar_rush", SugarRushBuff::new);
+    public static final RegistryObject<MobEffect> Sharpened = INOEFFECT.register("sharpened", SharpenedBuff::new);
+    public static final RegistryObject<MobEffect> HeartLamp = INOEFFECT.register("heart_lamp", HeartLampBuff::new);
+    public static final RegistryObject<MobEffect> CozyFire = INOEFFECT.register("cozy_fire", CozyFireBuff::new);
+    public static final RegistryObject<MobEffect> TheBastDefense = INOEFFECT.register("the_bast_defense", TheBastDefenseBuff::new);
+    public static final RegistryObject<MobEffect> Lucky = INOEFFECT.register("lucky", LuckyBuff::new);
+    public static final RegistryObject<MobEffect> Honey = INOEFFECT.register("honey", HoneyBuff::new);
+    public static final RegistryObject<MobEffect> Archery = INOEFFECT.register("archery", ArcheryBuff::new);
+    public static final RegistryObject<MobEffect> Happy = INOEFFECT.register("happy", HappyBuff::new);
+    public static final RegistryObject<MobEffect> AmmoBox = INOEFFECT.register("ammo_box", AmmoBoxBuff::new);
+    public static final RegistryObject<MobEffect> ArsSource = INOEFFECT.register("ars_source", ArsSourceBuff::new);
+    public static final RegistryObject<MobEffect> IronSource = INOEFFECT.register("iron_arcane", IronSourceBuff::new);
+    public static final RegistryObject<MobEffect> Merfolk = INOEFFECT.register("merfolk", MerfolkBuff::new);
 }
