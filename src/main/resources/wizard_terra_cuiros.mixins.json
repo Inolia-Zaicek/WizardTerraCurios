@@ -8,7 +8,8 @@
     "Jei.WTCModJeiPluginMixin",
     "WTCSunStoneMixin",
     "WTCMoonStoneMixin",
-    "WTCCelestialStoneMixin"
+    "WTCCelestialStoneMixin",
+    "MMTProjectileMixin"
   ],
   "client": [
   ],

@@ -28,6 +28,16 @@
     {"id":"wizard_terra_cuiros:celestial_shell","required":false},
 
     {"id":"wizard_terra_cuiros:iron_gold_crown","required":false},
-    {"id":"wizard_terra_cuiros:iron_tarnished_crown","required":false}
+    {"id":"wizard_terra_cuiros:iron_tarnished_crown","required":false},
+
+    {"id":"wizard_terra_cuiros:discount_card","required":false},
+    {"id":"wizard_terra_cuiros:lucky_coin","required":false},
+    {"id":"wizard_terra_cuiros:gold_ring","required":false},
+    {"id":"wizard_terra_cuiros:coin_ring","required":false},
+    {"id":"wizard_terra_cuiros:greedy_ring","required":false},
+
+    {"id":"wizard_terra_cuiros:chlorophyte_quiver","required":false},
+    {"id":"wizard_terra_cuiros:deadshot_brooch","required":false},
+    {"id":"wizard_terra_cuiros:elemental_quiver","required":false}
   ]
 }

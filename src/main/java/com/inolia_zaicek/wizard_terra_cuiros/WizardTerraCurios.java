@@ -9,6 +9,7 @@ import com.inolia_zaicek.wizard_terra_cuiros.Event.Iron.IronPlayerTickEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczHurtEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczLivingEntityShootEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczPlayerTickEvent;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.WTCEntityJoinLevelEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.ModelProvider.ZeroingModRecipesGen;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
@@ -58,6 +59,7 @@ public class WizardTerraCurios {
         WTCAttributes.ATTRIBUTES.register(bus);
         MinecraftForge.EVENT_BUS.register(WTCEntityAttributeGiveEvent.class);
         MinecraftForge.EVENT_BUS.register(DropsEvent.class);
+        MinecraftForge.EVENT_BUS.register(WTCEntityJoinLevelEvent.class);
         //铁魔法增幅
         if(ModList.get().isLoaded("irons_spellbooks")) {
             MinecraftForge.EVENT_BUS.register(IronHurtEvent.class);

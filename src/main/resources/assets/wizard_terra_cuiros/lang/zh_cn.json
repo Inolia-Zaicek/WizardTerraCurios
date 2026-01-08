@@ -138,5 +138,21 @@
 "item.wizard_terra_cuiros.iron_gold_crown":"泰拉之冠",
 "item.wizard_terra_cuiros.iron_tarnished_crown":"§7黯淡之冠",
 
+"item.wizard_terra_cuiros.discount_card":"优惠卡",
+"tooltip.wizard_terra_cuiros.discount_card.text":"获得村庄英雄I效果，相当于30%%交易折扣",
+"item.wizard_terra_cuiros.lucky_coin":"§e幸运币",
+"tooltip.wizard_terra_cuiros.lucky_coin.text":"造成伤害时有10%%概率掉落1-10枚绿宝石",
+"item.wizard_terra_cuiros.gold_ring":"§e金戒指",
+
+"item.wizard_terra_cuiros.coin_ring":"§e钱币戒指",
+"item.wizard_terra_cuiros.greedy_ring":"贪婪戒指",
+
+"item.confluence.coin_curios.info":"它有较小概率在掠夺者、唤魔者、卫道士、劫掠兽死亡时掉落",
+
+"item.wizard_terra_cuiros.chlorophyte_quiver":"§2叶绿箭袋",
+"item.wizard_terra_cuiros.deadshot_brooch":"§a神射手胸针",
+"item.wizard_terra_cuiros.elemental_quiver":"元素箭袋",
+"tooltip.wizard_terra_cuiros.chlorophyte_quiver.text":"有50%%概率使发射的弹射物追踪目标",
+
 "item_group.wizard_terra_cuiros.tab":"泰拉饰品拓展"
 }

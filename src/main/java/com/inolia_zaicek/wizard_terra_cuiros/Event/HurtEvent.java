@@ -6,10 +6,15 @@ import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.OwnableEntity;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import java.util.Random;
 
 import static net.minecraft.tags.DamageTypeTags.WITCH_RESISTANT_TO;
 
@@ -30,6 +35,25 @@ public class HurtEvent {
                 float number = 1;
                 float overNumber = 1;
                 float fixedNumber = 0;
+                if (WTCUtil.isCurioEquipped(attacker, WTCItemRegister.LuckyCoin.get())
+                        ||WTCUtil.isCurioEquipped(attacker, WTCItemRegister.CoinRing.get())
+                        ||WTCUtil.isCurioEquipped(attacker, WTCItemRegister.GreedyRing.get()) ) {
+                    Random chance = new Random();
+                    if (chance.nextInt(100) <= 10) {
+                        Level level = attacked.level();
+                        Random random = new Random();
+                        //(0~9)+1
+                        for (int i = 0; i < random.nextInt(10) + 1; i++) {
+                            ItemEntity itementity = new ItemEntity(level, attacked.getX(),
+                                    attacked.getY(), attacked.getZ(),
+                                    Items.EMERALD
+                                            .getDefaultInstance());
+                            itementity.setDeltaMovement(itementity.getDeltaMovement().add((double) ((level.random.nextFloat() - level.random.nextFloat()) * 0.1F),
+                                    (double) (level.random.nextFloat() * 0.05F), (double) ((level.random.nextFloat() - level.random.nextFloat()) * 0.1F)));
+                            level.addFreshEntity(itementity);
+                        }
+                    }
+                }
                 //攻击者是随从
                 if(attacker instanceof OwnableEntity ownableEntity&&ownableEntity.getOwner()!=null){
                     LivingEntity owner =ownableEntity.getOwner();

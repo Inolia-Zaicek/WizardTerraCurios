@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.AABB;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.registries.ForgeRegistries;
+import org.confluence.mod.item.curio.combat.IMagicQuiver;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotResult;
 import top.theillusivec4.curios.api.type.capability.ICuriosItemHandler;
@@ -163,5 +164,23 @@ public class WTCUtil {
             }
         }
         return null; // 所有饰品都为空或没有匹配项
+    }
+    // 定义一个方法，用于判断Item是否实现IMagicQuiver
+    public static boolean hasIMagicQuiver(LivingEntity living) {
+        AtomicBoolean hasQuiver = new AtomicBoolean(false);
+        CuriosApi.getCuriosInventory(living).ifPresent((handler) -> {
+            for(ICurioStacksHandler curioStacksHandler : handler.getCurios().values()) {
+                IDynamicStackHandler stackHandler = curioStacksHandler.getStacks();
+
+                for(int i = 0; i < stackHandler.getSlots(); ++i) {
+                    ItemStack stack = stackHandler.getStackInSlot(i);
+                    if (!stack.isEmpty() && stack.getItem() instanceof IMagicQuiver) {
+                        hasQuiver.set(true);
+                        return;
+                    }
+                }
+            }
+        });
+        return hasQuiver.get();
     }
 }

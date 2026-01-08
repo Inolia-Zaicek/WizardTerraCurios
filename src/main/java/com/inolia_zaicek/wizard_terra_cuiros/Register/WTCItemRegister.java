@@ -3,6 +3,12 @@ package com.inolia_zaicek.wizard_terra_cuiros.Register;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.CanUsedBuffItem.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.CelestialOnionItem;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Functionality.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.General.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Magic.ChaosStoneItem;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Magic.ManaPolarizerItem;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Range.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Summon.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -39,22 +45,7 @@ public class WTCItemRegister {
     //灾厄
     public static RegistryObject<Item> TheCommunity=registerCommonMaterials(ZeroingITEM,"the_community", TheCommunityItem::new);
     public static RegistryObject<Item> CelestialOnion=registerCommonMaterials(ZeroingITEM,"celestial_onion", CelestialOnionItem::new);
-    public static RegistryObject<Item> ChaosStone=registerCommonMaterials(ZeroingITEM,"chaos_stone", ChaosStoneItem::new);
-    public static RegistryObject<Item> ManaPolarizer=registerCommonMaterials(ZeroingITEM,"mana_polarizer", ManaPolarizerItem::new);
-    //泰拉本体
-    public static RegistryObject<Item> SummonerEmblem=registerCommonMaterials(ZeroingITEM,"summoner_emblem", SummonerEmblemItem::new);
-    public static RegistryObject<Item> UniterEmblem=registerCommonMaterials(ZeroingITEM,"uniter_emblem", UniterEmblemItem::new);
-    public static RegistryObject<Item> DoomEmblem=registerCommonMaterials(ZeroingITEM,"doom_emblem", DoomEmblemItem::new);
-    public static RegistryObject<Item> PygmyNecklace=registerCommonMaterials(ZeroingITEM,"pygmy_necklace", PygmyNecklaceItem::new);
-    public static RegistryObject<Item> NecromanticScroll=registerCommonMaterials(ZeroingITEM,"necromantic_scroll", NecromanticScrollItem::new);
-    public static RegistryObject<Item> HerculesBeetle=registerCommonMaterials(ZeroingITEM,"hercules_beetle", HerculesBeetleItem::new);
-    public static RegistryObject<Item> PapyrusScarab=registerCommonMaterials(ZeroingITEM,"papyrus_scarab", PapyrusScarabItem::new);
-    public static RegistryObject<Item> NeptunesShell=registerCommonMaterials(ZeroingITEM,"neptunes_shell", NeptunesShellItem::new);
-    public static RegistryObject<Item> MoonCharm=registerCommonMaterials(ZeroingITEM,"moon_charm", MoonCharmItem::new);
-    public static RegistryObject<Item> MoonShell=registerCommonMaterials(ZeroingITEM,"moon_shell", MoonShellItem::new);
-    public static RegistryObject<Item> CelestialShell=registerCommonMaterials(ZeroingITEM,"celestial_shell", CelestialShellItem::new);
     //增益站
-
     public static RegistryObject<Item> BewitchingTable=registerCommonMaterials(ZeroingITEM,"bewitching_table", BewitchingTableItem::new);
     public static RegistryObject<Item> WarTable=registerCommonMaterials(ZeroingITEM,"war_table", WarTableItem::new);
     public static RegistryObject<Item> CrystalBall=registerCommonMaterials(ZeroingITEM,"crystal_ball", CrystalBallItem::new);
@@ -67,6 +58,34 @@ public class WTCItemRegister {
     public static RegistryObject<Item> BottledHoney=registerCommonMaterials(ZeroingITEM,"bottled_honey", BottledHoneyItem::new);
     public static RegistryObject<Item> ArrowStand=registerCommonMaterials(ZeroingITEM,"arrow_stand", ArrowStandItem::new);
     public static RegistryObject<Item> Sunflower=registerCommonMaterials(ZeroingITEM,"sunflower", SunflowerItem::new);
+    ///泰拉本体
+    //通用
+    public static RegistryObject<Item> UniterEmblem=registerCommonMaterials(ZeroingITEM,"uniter_emblem", UniterEmblemItem::new);
+    public static RegistryObject<Item> DoomEmblem=registerCommonMaterials(ZeroingITEM,"doom_emblem", DoomEmblemItem::new);
+    public static RegistryObject<Item> NeptunesShell=registerCommonMaterials(ZeroingITEM,"neptunes_shell", NeptunesShellItem::new);
+    public static RegistryObject<Item> MoonCharm=registerCommonMaterials(ZeroingITEM,"moon_charm", MoonCharmItem::new);
+    public static RegistryObject<Item> MoonShell=registerCommonMaterials(ZeroingITEM,"moon_shell", MoonShellItem::new);
+    public static RegistryObject<Item> CelestialShell=registerCommonMaterials(ZeroingITEM,"celestial_shell", CelestialShellItem::new);
+    //法师
+    public static RegistryObject<Item> ChaosStone=registerCommonMaterials(ZeroingITEM,"chaos_stone", ChaosStoneItem::new);
+    public static RegistryObject<Item> ManaPolarizer=registerCommonMaterials(ZeroingITEM,"mana_polarizer", ManaPolarizerItem::new);
+    //射手
+    public static RegistryObject<Item> ChlorophyteQuiver=registerCommonMaterials(ZeroingITEM,"chlorophyte_quiver", ChlorophyteQuiverItem::new);
+    public static RegistryObject<Item> DeadshotBrooch=registerCommonMaterials(ZeroingITEM,"deadshot_brooch", DeadshotBroochItem::new);
+    public static RegistryObject<Item> ElementalQuiver=registerCommonMaterials(ZeroingITEM,"elemental_quiver", ElementalQuiverItem::new);
+    //召唤师
+    public static RegistryObject<Item> SummonerEmblem=registerCommonMaterials(ZeroingITEM,"summoner_emblem", SummonerEmblemItem::new);
+    public static RegistryObject<Item> PygmyNecklace=registerCommonMaterials(ZeroingITEM,"pygmy_necklace", PygmyNecklaceItem::new);
+    public static RegistryObject<Item> NecromanticScroll=registerCommonMaterials(ZeroingITEM,"necromantic_scroll", NecromanticScrollItem::new);
+    public static RegistryObject<Item> HerculesBeetle=registerCommonMaterials(ZeroingITEM,"hercules_beetle", HerculesBeetleItem::new);
+    public static RegistryObject<Item> PapyrusScarab=registerCommonMaterials(ZeroingITEM,"papyrus_scarab", PapyrusScarabItem::new);
+    //功能性
+    public static RegistryObject<Item> DiscountCard=registerCommonMaterials(ZeroingITEM,"discount_card", DiscountCardItem::new);
+    public static RegistryObject<Item> LuckyCoin=registerCommonMaterials(ZeroingITEM,"lucky_coin", LuckyCoinItem::new);
+    public static RegistryObject<Item> GoldRing=registerCommonMaterials(ZeroingITEM,"gold_ring", GoldRingItem::new);
+    public static RegistryObject<Item> CoinRing=registerCommonMaterials(ZeroingITEM,"coin_ring", CoinRingItem::new);
+    public static RegistryObject<Item> GreedyRing=registerCommonMaterials(ZeroingITEM,"greedy_ring", GreedyRingItem::new);
+
 
     public static RegistryObject<Item> AmmoBox;
 
