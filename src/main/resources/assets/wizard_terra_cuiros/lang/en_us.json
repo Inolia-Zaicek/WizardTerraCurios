@@ -1,15 +1,147 @@
 {
-"item.wizard_terra_cuiros.iron_mana_band":"Mana Regeneration Band",
-"item.wizard_terra_cuiros.iron_mana_flower":"Mana Flower",
-"item.wizard_terra_cuiros.iron_mana_cloak":"Mana Cloak",
-"item.wizard_terra_cuiros.iron_magic_cuffs":"Mana Cuffs",
-"item.wizard_terra_cuiros.iron_celestial_magnet":"Celestial Magnet",
-"item.wizard_terra_cuiros.iron_celestial_cuffs":"Celestial Cuffs",
-"item.wizard_terra_cuiros.iron_magnet_flower":"Magnetic Flower",
-"item.wizard_terra_cuiros.iron_celestial_emblem":"Celestial Emblem",
-"item.wizard_terra_cuiros.iron_arcane_flower":"Arcane Mana Flower",
-"tooltip.wizard_terra_cuiros.iron_mana_flower.text":"§eWhen mana is below §950§9%%§e, it will automatically consume §9Arcane Essence§e from the backpack to restore §925 mana§9+§95§9%%§9 of maximum mana, but will gain 5 seconds of §9Mana Sickness§e\n§e(§9Mana Sickness§e — reduces §925§9%%§e of §9Iron Magic Spell Damage§e)",
-"tooltip.wizard_terra_cuiros.iron_magic_cuffs.text":"Restores [damage amount * 10] mana when injured",
-"effect.wizard_terra_cuiros.mana_sickness":"Mana Sickness",
-"item_group.wizard_terra_cuiros.tab":"Terra Curio Expansion"
+"item.wizard_terra_cuiros.iron_mana_band":"§bMana Regeneration Bracelet",
+"item.wizard_terra_cuiros.iron_mana_flower":"§bMana Flower",
+"item.wizard_terra_cuiros.iron_mana_cloak":"§bMana Cloak",
+"item.wizard_terra_cuiros.iron_magic_cuffs":"§bMana Cuffs",
+"item.wizard_terra_cuiros.iron_celestial_magnet":"§bCelestial Magnet",
+"item.wizard_terra_cuiros.iron_celestial_cuffs":"§bCelestial Cuffs",
+"item.wizard_terra_cuiros.iron_celestial_emblem":"§bCelestial Emblem",
+"item.wizard_terra_cuiros.iron_magnet_flower":"§bMagnet Flower",
+"item.wizard_terra_cuiros.iron_arcane_flower":"§bArcane Mana Flower",
+
+"item.wizard_terra_cuiros.summoner_emblem":"§gSummoner Emblem",
+"item.wizard_terra_cuiros.uniter_emblem":"§eUniter Emblem",
+"item.wizard_terra_cuiros.doom_emblem":"§gDoom Emblem",
+
+"item.wizard_terra_cuiros.necromantic_scroll":"§6Necromantic Scroll",
+"item.confluence.necromantic_scroll.info":"Can be found in End City chests.",
+
+"item.wizard_terra_cuiros.pygmy_necklace":"§aDwarf Necklace",
+"item.confluence.pygmy_necklace.info":"Can be found in Jungle Temple chests.",
+
+"item.wizard_terra_cuiros.hercules_beetle":"§eHercules Beetle",
+"item.confluence.hercules_beetle.info":"Can be found in Nether Fortress chests.",
+
+"item.wizard_terra_cuiros.papyrus_scarab":"§6Scarab Papyrus",
+
+"item.wizard_terra_cuiros.chaos_stone":"§4Chaos Stone",
+"tooltip.wizard_terra_cuiros.chaos_stone.text":"Mana afflictions no longer reduce Iron Magic damage, but are regarded as §4-2.0§9 natural health regeneration during effects",
+"tooltip.wizard_terra_cuiros.chaos_stone.ars_text":"[Magic Source Expansion] Mana afflictions no longer reduce Iron Magic damage, regarded as §4-2.0§9 natural health regeneration during effects (not stacking with mana sickness)",
+"item.confluence.chaos_stone.info":"It definitely drops from the Ender Dragon.",
+
+"item.wizard_terra_cuiros.mana_polarizer":"§9Magic Resonator",
+"tooltip.wizard_terra_cuiros.mana_polarizer.text":"Restores [damage amount 10%] health when dealing vanilla magic damage",
+"tooltip.wizard_terra_cuiros.mana_polarizer.iron_text":"Restores [current mana percentage * damage amount 10%] health when dealing iron magic spell damage",
+"tooltip.wizard_terra_cuiros.mana_polarizer.ars_text":"Restores [current mana source percentage * damage amount 10%] health when dealing magic rune damage",
+"tooltip.wizard_terra_cuiros.mana_polarizer.tooltip_text":"When installed with §eIron Magic/Nova Magic§f, if current §eMana/Mana Source both exceed 50%%§f, counts as §4-0.3§9 natural health regeneration",
+"item.confluence.mana_polarizer.info":"It definitely drops from Wither.",
+
+"item.wizard_terra_cuiros.the_community":"Unity Heart of the Origin Stone",
+"tooltip.wizard_terra_cuiros.the_community.text":"Slight attribute boosts for all properties, increasing as game progresses",
+"tooltip.wizard_terra_cuiros.the_community.text_2":"Under default settings, each elite enemy/BOSS kill increases [0.25%% critical chance + 0.5%% melee/magic/ranged damage + 0.25%% summon damage + 0.5%% max health + 0.25%% damage reduction + 0.5%% armor + 1%% movement speed + 0.03%% natural life regeneration]",
+
+"tooltip.wizard_terra_cuiros.iron_mana_flower.text": "§eWhen health is below§950§9%%§e, automatically consumes §9Arcane Source§e in inventory, restores §925 mana§9+§95§9%%§9 max mana, but gains 5s of §9mana sickness§e\n§e(Mana Sickness — reduces §925§9%%§e Iron Magic spell damage)",
+"tooltip.wizard_terra_cuiros.iron_magic_cuffs.text": "Restores [damage amount *10] mana when injured",
+"tooltip.wizard_terra_cuiros.the_community.text_count":"Current number of elite enemies defeated: §e%s",
+"tooltip.wizard_terra_cuiros.the_community.text_max":"Unity Heart of the Origin Stone has reached its peak power",
+
+"death.attack.truedamage": "%1$s's life has fully sublimated into magic.",
+
+"wizard_terra_cuiros.natural_life_regeneration":"Natural health regeneration rate",
+"wizard_terra_cuiros.summon_damage":"Summon damage",
+"wizard_terra_cuiros.damage_reduction":"Damage reduction",
+"effect.wizard_terra_cuiros.mana_sickness": "Mana Sickness",
+
+"item.wizard_terra_cuiros.bewitching_table":"Enchantment Table",
+"tooltip.wizard_terra_cuiros.bewitching_table.text":"Right-click to gain 10 minutes of [Enchanted] status, increasing summon damage by 5%%",
+"effect.wizard_terra_cuiros.bewitched": "Enchanted",
+"item.confluence.bewitching_table.info":"It has a chance to drop when the Enchanter dies.",
+
+"item.wizard_terra_cuiros.war_table":"War Table",
+"tooltip.wizard_terra_cuiros.war_table.text":"Right-click to gain 10 minutes of [Strategist] status, increasing summon damage by 5%%",
+"effect.wizard_terra_cuiros.strategist": "Strategist",
+"item.confluence.war_table.info":"It has a chance to drop when the Ravager dies.",
+
+"item.wizard_terra_cuiros.crystal_ball":"Crystal Ball",
+"tooltip.wizard_terra_cuiros.crystal_ball.text":"Right-click to gain 10 minutes of [Clairvoyance] status, increasing magic damage by 5%%, and also increasing mana/mana source cap when installed with Iron Magic/Nova Magic",
+"effect.wizard_terra_cuiros.clairvoyance": "Clairvoyance",
+"item.confluence.crystal_ball.info":"It has a chance to drop when the Witch dies.",
+
+"item.wizard_terra_cuiros.slice_of_cake":"Slice of Cake, -10%% movement speed",
+"effect.wizard_terra_cuiros.honey": "Honey",
+
+"item.wizard_terra_cuiros.arrow_stand":"Arrow Stand",
+"tooltip.wizard_terra_cuiros.arrow_stand.text":"Right-click to gain 10 minutes of [Archery] status, increasing ranged & projectile damage by 5%%",
+"effect.wizard_terra_cuiros.archery": "Archery",
+
+"item.wizard_terra_cuiros.sunflower":"Sunflower",
+"tooltip.wizard_terra_cuiros.sunflower.text":"Right-click to gain 10 minutes of [Happiness] status, increasing movement speed by 10%%",
+"effect.wizard_terra_cuiros.happy": "Happiness",
+
+"item.wizard_terra_cuiros.ammo_box":"Ammunition Box",
+"tooltip.wizard_terra_cuiros.ammo_box.text":"[TACZ Link] Right-click to gain 10 minutes of [Economy] status, with 20%% chance not to consume ammunition when firing guns",
+"effect.wizard_terra_cuiros.ammo_box": "Economy",
+
+"item.wizard_terra_cuiros.glyph_scribes_table":"Magic Rune Scribing Table",
+"tooltip.wizard_terra_cuiros.glyph_scribes_table.text":"[Nova Magic Link] Right-click to gain 10 minutes of [Mana Source] status, increasing magic damage by 2.5%% and mana source cap by 5%%",
+"effect.wizard_terra_cuiros.ars_source": "Mana Source",
+
+"item.wizard_terra_cuiros.arcane_scroll_forge":"Arcane Scribing Table",
+"tooltip.wizard_terra_cuiros.arcane_scroll_forge.text":"[Iron Magic Link] Right-click to gain 10 minutes of [Arcane] status, increasing magic damage by 2.5%% and maximum mana by 5%%",
+"effect.wizard_terra_cuiros.iron_arcane": "Arcane",
+
+"item.wizard_terra_cuiros.celestial_onion":"Celestial Onion",
+"item.confluence.celestial_onion.tooltip":"Permanently increases accessory slots, requires use of Demon Heart",
+"item.confluence.celestial_onion.info":"It definitely drops from the Ender Dragon.",
+
+"item.wizard_terra_cuiros.neptunes_shell":"§dNeptune Shell",
+"tooltip.wizard_terra_cuiros.neptunes_shell.text":"Transform into mermaid when entering water, increasing swimming speed by 50%% and gaining underwater breathing",
+"item.confluence.neptunes_shell.info":"Can be found in shipwreck chests.",
+"effect.wizard_terra_cuiros.merfolk": "Merfolk Form",
+
+"item.wizard_terra_cuiros.moon_charm":"Moonlight Amulet",
+"item.confluence.moon_charm.tooltip":"Transform into werewolf at night, slightly boosting attributes",
+"tooltip.wizard_terra_cuiros.moon_charm.text":"Transform into werewolf at night, slightly boosting attributes",
+"item.confluence.moon_charm.info":"It has a chance to drop when a Bat dies.",
+
+"item.wizard_terra_cuiros.moon_shell":"Moon Shell",
+"item.confluence.moon_shell.tooltip":"Transform into werewolf at night, slightly boosting attributes",
+
+"item.wizard_terra_cuiros.celestial_shell":"Celestial Shell",
+"item.wizard_terra_cuiros.iron_gold_crown":"Terraria Crown",
+"item.wizard_terra_cuiros.iron_tarnished_crown":"§7Dull Crown",
+
+"item.wizard_terra_cuiros.discount_card":"Discount Card",
+"tooltip.wizard_terra_cuiros.discount_card.text":"Grants Village Hero I effect, equivalent to 30%% trade discount",
+"item.wizard_terra_cuiros.lucky_coin":"§eLucky Coin",
+"tooltip.wizard_terra_cuiros.lucky_coin.text":"10%% chance to drop 1-10 emeralds when dealing damage",
+"item.wizard_terra_cuiros.gold_ring":"§eGold Ring",
+
+"item.wizard_terra_cuiros.coin_ring":"§eCoin Ring",
+"item.wizard_terra_cuiros.greedy_ring":"Greedy Ring",
+
+"item.confluence.coin_curios.info":"Has a small chance to drop when Ravager, Enchanter, Warden, or Ravager dies.",
+
+"item.wizard_terra_cuiros.chlorophyte_quiver":"§2Chlorophyte Quiver",
+"item.wizard_terra_cuiros.deadshot_brooch":"§aSharpshooter Brooch",
+"item.wizard_terra_cuiros.elemental_quiver":"Elemental Quiver",
+"tooltip.wizard_terra_cuiros.chlorophyte_quiver.text":"50%% chance for fired projectiles to track targets",
+
+"effect.wizard_terra_cuiros.ammo_box.description":"20%% chance not to consume a bullet when shooting",
+"effect.wizard_terra_cuiros.ars_source.description":"Each level increases Mana Source cap and magic damage by 5%% and 2.5%% respectively",
+"effect.wizard_terra_cuiros.iron_arcane.description":"Each level increases mana capacity and magic damage by 5%% and 2.5%% respectively",
+"effect.wizard_terra_cuiros.merfolk.description":"Each level grants 50%% swimming speed (only effective in water)",
+"effect.wizard_terra_cuiros.happy.description":"Each level increases speed by 10%%",
+"effect.wizard_terra_cuiros.archery.description":"Each level increases projectile damage by 5%%",
+"effect.wizard_terra_cuiros.honey.description":"Each level increases natural life regeneration rate by 0.2 and reduces speed by 10%% (effectively reduces luck by 10%%)",
+"effect.wizard_terra_cuiros.lucky.description":"Each level increases luck by 0.2",
+"effect.wizard_terra_cuiros.cozy_fire.description":"Each level increases natural life regeneration rate by 0.1",
+"effect.wizard_terra_cuiros.heart_lamp.description":"Each level increases natural life regeneration rate by 0.2",
+"effect.wizard_terra_cuiros.sharpened.description":"Each level increases armor penetration by 12",
+"effect.wizard_terra_cuiros.sugar_rush.description":"Each level increases speed and mining speed by 20%",
+"effect.wizard_terra_cuiros.clairvoyance.description":"Each level increases magic damage by 5% (also increases max mana / mana source cap if installed with Iron Magic / Nova Magic)",
+"effect.wizard_terra_cuiros.the_bast_defense.description":"Each level increases armor by 5",
+"effect.wizard_terra_cuiros.strategist.description":"Each level increases summon damage by 5%",
+"effect.wizard_terra_cuiros.bewitched.description":"Each level increases summon damage by 5%",
+"effect.wizard_terra_cuiros.mana_sickness.description":"Reduces Iron Magic spell damage by 25% (if equipped with Chaos Stone, reduces natural life regeneration by 2 points)"
 }

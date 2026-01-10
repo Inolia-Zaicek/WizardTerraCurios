@@ -157,10 +157,18 @@ dependencies {
     implementation fg.deobf("blank:touhoulittlemaid-1.20.1:1")
     implementation fg.deobf("blank:tacz-1.20.1:1")
 
+    //compileOnly fg.deobf("eidolon-1.20.1:1")
+
+    implementation fg.deobf("blank:lodestone-1.20.1:1.6.4.1")
+    implementation fg.deobf("blank:malum-1.20.1:1.6.7")
+
+    implementation fg.deobf("blank:goety-2.5.36.1-1.20.1:1")
+
     compileOnly fg.deobf("blank:traveloptics-1.20.1:1")
     compileOnly fg.deobf("blank:gtbcs_geomancy_plus-1.20.1:1")
     compileOnly fg.deobf("blank:fantasy_ending-1.20.1:1")
     compileOnly fg.deobf("blank:alshanex_familiars-1.20.1:1")
+    //compileOnly fg.deobf("blank:goety-2.5.43.2-1.20.1:1")
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")

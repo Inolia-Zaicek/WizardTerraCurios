@@ -1,11 +1,13 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Event.Iron;
 
+import com.inolia_zaicek.wizard_terra_cuiros.Config.WTCConfig;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCEEffectsRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import io.redspace.ironsspellbooks.api.magic.MagicData;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
 import io.redspace.ironsspellbooks.damage.ISSDamageTypes;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -42,6 +44,13 @@ public class IronHurtEvent {
                         ||event.getSource().is(ISSDamageTypes.ELDRITCH_MAGIC)||event.getSource().is(ISSDamageTypes.ENDER_MAGIC)
                         ||event.getSource().is(ISSDamageTypes.NATURE_MAGIC)
                 ) {
+                    if (WTCUtil.isCurioEquipped(attacker, WTCItemRegister.GoldenShower.get())&&attacked!=null){
+                        var map = attacked.getActiveEffectsMap();
+                        attacked.addEffect(new MobEffectInstance(WTCEEffectsRegister.Ichor.get(), (int) (20*WTCConfig.golden_shower_time.get()), (int) (WTCConfig.golden_shower_level.get()-1)));
+                        if (!attacked.hasEffect(WTCEEffectsRegister.Ichor.get())) {
+                            map.put(WTCEEffectsRegister.Ichor.get(), new MobEffectInstance(WTCEEffectsRegister.Ichor.get(), (int) (20* WTCConfig.golden_shower_time.get()), (int) (WTCConfig.golden_shower_level.get()-1)));
+                        }
+                    }
                     if(attacker.getAttributes().hasAttribute(ModAttributes.getMagicDamage())) {
                         float damageUp = (float) attacker.getAttributeValue(ModAttributes.getMagicDamage());
                         number *= damageUp;

@@ -1,5 +1,6 @@
 package com.inolia_zaicek.wizard_terra_cuiros.Event.Iron;
 
+import com.inolia_zaicek.wizard_terra_cuiros.Config.WTCConfig;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCEEffectsRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
@@ -27,12 +28,13 @@ public class IronPlayerTickEvent {
                 var pmg = MagicData.getPlayerMagicData(player);
                 if (pmg != null) {
                     float maxMana = (float) player.getAttributeValue(AttributeRegistry.MAX_MANA.get());
-                    if (pmg.getMana() <= maxMana * 0.5F) {
+                    if (pmg.getMana() <= maxMana * WTCConfig.IronNumber.get()) {
                         player.getPersistentData().putBoolean(mana_polarizer_iron_nbt,false);
                         // 魔力花
                         if (WTCUtil.isCurioEquipped(player, WTCItemRegister.IronManaFlower.get())
                                 || WTCUtil.isCurioEquipped(player, WTCItemRegister.IronManaCloak.get())
                                 || WTCUtil.isCurioEquipped(player, WTCItemRegister.IronMagnetFlower.get())
+                                || WTCUtil.isCurioEquipped(player, WTCItemRegister.EtherealTalisman.get())
                         ) {
                             // 新增的检测和消耗逻辑
                             boolean consumed = false;
@@ -80,7 +82,7 @@ public class IronPlayerTickEvent {
 
                             // 如果找到了物品并消耗了，增加法力
                             if (consumed) {
-                                pmg.addMana(maxMana * 0.25F);
+                                pmg.addMana((float) (maxMana * WTCConfig.IronAdd.get()));
                                 player.addEffect(new MobEffectInstance(WTCEEffectsRegister.ManaSickness.get(), 100, 0));
                             }
                         }

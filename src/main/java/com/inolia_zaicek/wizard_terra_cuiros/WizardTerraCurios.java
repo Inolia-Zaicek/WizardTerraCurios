@@ -4,8 +4,10 @@ import com.inolia_zaicek.wizard_terra_cuiros.Config.WTCConfig;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Ars.ArsHurtEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Ars.*;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Goety.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Iron.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Iron.IronPlayerTickEvent;
+import com.inolia_zaicek.wizard_terra_cuiros.Event.Malum.MalumHurtEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczHurtEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczLivingEntityShootEvent;
 import com.inolia_zaicek.wizard_terra_cuiros.Event.Tacz.TaczPlayerTickEvent;
@@ -85,6 +87,17 @@ public class WizardTerraCurios {
             MinecraftForge.EVENT_BUS.register(TaczHurtEvent.class);
             MinecraftForge.EVENT_BUS.register(TaczPlayerTickEvent.class);
             MinecraftForge.EVENT_BUS.register(TaczLivingEntityShootEvent.class);
+        }
+        if(ModList.get().isLoaded("goety")) {
+            //MinecraftForge.EVENT_BUS.register(GoetyCastMagicEvent.class);
+            MinecraftForge.EVENT_BUS.register(GoetyHurtEvent.class);
+        }
+        if(ModList.get().isLoaded("goety")) {
+            MinecraftForge.EVENT_BUS.register(GoetyLivingEntityUseItemEvent.class);
+            MinecraftForge.EVENT_BUS.register(GoetyHurtEvent.class);
+        }
+        if(ModList.get().isLoaded("malum")) {
+            MinecraftForge.EVENT_BUS.register(MalumHurtEvent.class);
         }
     }
 

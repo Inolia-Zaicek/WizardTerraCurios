@@ -29,4 +29,8 @@ public class WTCEEffectsRegister {
     public static final RegistryObject<MobEffect> ArsSource = INOEFFECT.register("ars_source", ArsSourceBuff::new);
     public static final RegistryObject<MobEffect> IronSource = INOEFFECT.register("iron_arcane", IronSourceBuff::new);
     public static final RegistryObject<MobEffect> Merfolk = INOEFFECT.register("merfolk", MerfolkBuff::new);
+    public static final RegistryObject<MobEffect> CursePower = INOEFFECT.register("curse_power", CursePowerBuff::new);
+    public static final RegistryObject<MobEffect> SpiritEyes = INOEFFECT.register("spirit_eyes", SpiritEyesBuff::new);
+    public static final RegistryObject<MobEffect> Ichor = INOEFFECT.register("ichor", IchorBuff::new);
+    public static final RegistryObject<MobEffect> RoverShield = INOEFFECT.register("rover_shield", RoverShieldBuff::new);
 }

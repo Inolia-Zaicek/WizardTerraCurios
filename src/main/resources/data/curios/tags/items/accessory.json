@@ -38,6 +38,33 @@
 
     {"id":"wizard_terra_cuiros:chlorophyte_quiver","required":false},
     {"id":"wizard_terra_cuiros:deadshot_brooch","required":false},
-    {"id":"wizard_terra_cuiros:elemental_quiver","required":false}
+    {"id":"wizard_terra_cuiros:elemental_quiver","required":false},
+
+    {"id":"wizard_terra_cuiros:dark_focus","required":false},
+    {"id":"wizard_terra_cuiros:soul_focus","required":false},
+    {"id":"wizard_terra_cuiros:warped_focus","required":false},
+    {"id":"wizard_terra_cuiros:goety_focus","required":false},
+    {"id":"wizard_terra_cuiros:haunted_focus","required":false},
+
+    {"id":"wizard_terra_cuiros:brewer_hat","required":false},
+    {"id":"wizard_terra_cuiros:master_brewer_hat","required":false},
+    {"id":"wizard_terra_cuiros:dimensional_soul_artifact","required":false},
+    {"id":"wizard_terra_cuiros:sigil_of_calamitas","required":false},
+    {"id":"wizard_terra_cuiros:ethereal_talisman","required":false},
+
+    {"id":"wizard_terra_cuiros:spirit_brooch","required":false},
+    {"id":"wizard_terra_cuiros:necklace_of_the_soulstained_edge","required":false},
+    {"id":"wizard_terra_cuiros:necklace_of_the_deliverance_edge","required":false},
+
+    {"id":"wizard_terra_cuiros:golden_shower","required":false},
+    {"id":"wizard_terra_cuiros:ichor_arrow","required":false},
+    {"id":"wizard_terra_cuiros:flask_of_ichor","required":false},
+
+    {"id":"wizard_terra_cuiros:assassin_scope","required":false},
+    {"id":"wizard_terra_cuiros:rapid_fire_scope","required":false},
+
+    {"id":"wizard_terra_cuiros:rover_drive","required":false},
+    {"id":"wizard_terra_cuiros:wulfrum_battery","required":false},
+    {"id":"wizard_terra_cuiros:the_sponge","required":false}
   ]
 }

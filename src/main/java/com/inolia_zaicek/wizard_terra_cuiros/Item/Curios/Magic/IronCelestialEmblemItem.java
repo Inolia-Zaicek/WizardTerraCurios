@@ -1,6 +1,7 @@
-package com.inolia_zaicek.wizard_terra_cuiros.Item.IronSpell;
+package com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Magic;
 
 import com.google.common.collect.Multimap;
+import com.inolia_zaicek.wizard_terra_cuiros.Config.WTCConfig;
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -14,8 +15,8 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import java.util.UUID;
 
-public class IronCelestialMagnetItem extends Item implements ICurioItem {
-    public IronCelestialMagnetItem() {
+public class IronCelestialEmblemItem extends Item implements ICurioItem {
+    public IronCelestialEmblemItem() {
         super((new Properties()).stacksTo(1).fireResistant());
     }
     protected String getTooltipItemName() {
@@ -24,11 +25,12 @@ public class IronCelestialMagnetItem extends Item implements ICurioItem {
     @Override
     public Multimap<Attribute, AttributeModifier> getAttributeModifiers(SlotContext slotContext, UUID uuid, ItemStack stack) {
         Multimap<Attribute, AttributeModifier> attributes = ICurioItem.super.getAttributeModifiers(slotContext, uuid, stack);
-        attributes.put(ModAttributes.PICKUP_RANGE.get(), new AttributeModifier(uuid, getTooltipItemName(), 10.75F, AttributeModifier.Operation.ADDITION));
+        attributes.put(ModAttributes.PICKUP_RANGE.get(), new AttributeModifier(uuid, getTooltipItemName(), WTCConfig.CelestialMagnet.get(), AttributeModifier.Operation.ADDITION));
+        attributes.put(ModAttributes.getMagicDamage(), new AttributeModifier(uuid, getTooltipItemName(), WTCConfig.CelestialEmblem.get(), AttributeModifier.Operation.MULTIPLY_TOTAL));
         return attributes;
     }
     @Override
     public boolean canEquip(SlotContext slotContext, ItemStack stack) {
-        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronCelestialMagnet.get());
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.IronCelestialEmblem.get());
     }
 }

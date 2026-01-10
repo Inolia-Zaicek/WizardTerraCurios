@@ -6,10 +6,11 @@
   "refmap": "wizard_terra_cuiros.refmap.json",
   "mixins": [
     "Jei.WTCModJeiPluginMixin",
+    "Goety.WTCWandUtilMixin",
     "WTCSunStoneMixin",
     "WTCMoonStoneMixin",
     "WTCCelestialStoneMixin",
-    "MMTProjectileMixin"
+    "WTCProjectileMixin"
   ],
   "client": [
   ],

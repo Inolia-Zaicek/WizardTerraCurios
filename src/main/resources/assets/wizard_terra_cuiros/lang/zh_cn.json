@@ -97,7 +97,7 @@
 "tooltip.wizard_terra_cuiros.bottled_honey.text":"右键获得10min的[蜂蜜]状态，提升0.2自然生命再生，-10%%移动速度",
 "effect.wizard_terra_cuiros.honey": "蜂蜜",
 
-"item.wizard_terra_cuiros.arrow_stand":"箭架",
+"item.wizard_terra_cuiros.arrow_stand":"箭筒",
 "tooltip.wizard_terra_cuiros.arrow_stand.text":"右键获得10min的[箭术]状态，提升5%%远程伤害/弹射物伤害",
 "effect.wizard_terra_cuiros.archery": "箭术",
 
@@ -138,7 +138,7 @@
 "item.wizard_terra_cuiros.iron_gold_crown":"泰拉之冠",
 "item.wizard_terra_cuiros.iron_tarnished_crown":"§7黯淡之冠",
 
-"item.wizard_terra_cuiros.discount_card":"优惠卡",
+"item.wizard_terra_cuiros.discount_card":"§b优惠卡",
 "tooltip.wizard_terra_cuiros.discount_card.text":"获得村庄英雄I效果，相当于30%%交易折扣",
 "item.wizard_terra_cuiros.lucky_coin":"§e幸运币",
 "tooltip.wizard_terra_cuiros.lucky_coin.text":"造成伤害时有10%%概率掉落1-10枚绿宝石",
@@ -152,7 +152,97 @@
 "item.wizard_terra_cuiros.chlorophyte_quiver":"§2叶绿箭袋",
 "item.wizard_terra_cuiros.deadshot_brooch":"§a神射手胸针",
 "item.wizard_terra_cuiros.elemental_quiver":"元素箭袋",
-"tooltip.wizard_terra_cuiros.chlorophyte_quiver.text":"有50%%概率使发射的弹射物追踪目标",
+"tooltip.wizard_terra_cuiros.chlorophyte_quiver.text":"50%%概率使发射的弹射物追踪目标",
+
+"effect.wizard_terra_cuiros.ammo_box.description":"使用TACZ枪械射击时有20%%几率不消耗子弹",
+"effect.wizard_terra_cuiros.ars_source.description":"每级提升5%%魔源上限和2.5%%魔法伤害",
+"effect.wizard_terra_cuiros.iron_arcane.description":"每级提升5%%法力上限和2.5%%魔法伤害",
+"effect.wizard_terra_cuiros.merfolk.description":"每级获得50%%游泳速度（仅在水中生效）",
+"effect.wizard_terra_cuiros.happy.description":"每级提升10%%速度",
+"effect.wizard_terra_cuiros.archery.description":"每级提升5%%弹射物伤害",
+"effect.wizard_terra_cuiros.honey.description":"每级提升0.2点自然生命恢复速率减少10%%速度",
+"effect.wizard_terra_cuiros.lucky.description":"每级提升0.2点幸运值",
+"effect.wizard_terra_cuiros.cozy_fire.description":"每级提升0.1点自然生命恢复速率",
+"effect.wizard_terra_cuiros.heart_lamp.description":"每级提升0.2点自然生命恢复速率",
+"effect.wizard_terra_cuiros.sharpened.description":"每级提升12点护甲穿透",
+"effect.wizard_terra_cuiros.sugar_rush.description":"每级提升20%%速度和20%%挖掘速度",
+"effect.wizard_terra_cuiros.clairvoyance.description":"每级提升5%%魔法伤害(若安装铁魔法/新生魔艺则同时提升5%%最大法力值/5%%魔源上限)",
+"effect.wizard_terra_cuiros.the_bast_defense.description":"每级提升5点护甲值",
+"effect.wizard_terra_cuiros.strategist.description":"每级提升5%%召唤伤害",
+"effect.wizard_terra_cuiros.bewitched.description":"每级提升5%%召唤伤害",
+"effect.wizard_terra_cuiros.mana_sickness.description":"减少25%%铁魔法法术伤害(若装备混乱石,则减少2点自然生命恢复速率)",
+
+"item.wizard_terra_cuiros.dark_focus":"§7黑暗聚晶",
+"tooltip.wizard_terra_cuiros.gotey_potency_amplifier.text":"使用聚晶施法时，聚晶的强效等级会*[聚晶强效倍率]属性",
+"tooltip.wizard_terra_cuiros.gotey_potency_amplifier.text2":"最终强效等级取整数部分，且生效的前提是聚晶自身有强效等级",
+"item.wizard_terra_cuiros.soul_focus":"§b灵魂聚晶",
+"item.wizard_terra_cuiros.warped_focus":"§e诡魂聚晶",
+"item.wizard_terra_cuiros.goety_focus":"诡厄聚晶",
+"wizard_terra_cuiros.gotey_potency_amplifier":"聚晶强效倍率",
+
+"item.wizard_terra_cuiros.haunted_focus":"§e缠魂聚晶",
+"tooltip.wizard_terra_cuiros.goety_soul_absorb.text":"造成伤害时，会回复[伤害数额*灵魂汲取属性]的灵魂",
+"tooltip.wizard_terra_cuiros.goety_soul_absorb.text2":"默认配置下至多回复10%%玩家当前容器灵魂，且不会超过该容器的灵魂容量上限的75%%",
+"wizard_terra_cuiros.goety_soul_absorb":"灵魂汲取",
+
+"item.wizard_terra_cuiros.brewer_hat":"§9药酿师帽子",
+"tooltip.wizard_terra_cuiros.brewer_hat.text":"饮用药酿与药水时，有10%%几率不消耗药酿",
+
+"item.wizard_terra_cuiros.master_brewer_hat":"§5药酿大师帽",
+"tooltip.wizard_terra_cuiros.master_brewer_hat.text":"饮用药酿与药水时，有15%%几率不消耗药酿",
+
+"item.wizard_terra_cuiros.dimensional_soul_artifact":"维魂神物",
+"tooltip.wizard_terra_cuiros.dimensional_soul_artifact.text":"穿戴者所造成的伤害提升20%%，同时穿戴者受到的伤害也提升15%%",
+"item.confluence.dimensional_soul_artifact.info":"它有较低概率在末地城的宝箱中生成。",
+
+"item.wizard_terra_cuiros.sigil_of_calamitas":"§4灾厄符章",
+
+"item.wizard_terra_cuiros.ethereal_talisman":"空灵护符",
+"tooltip.wizard_terra_cuiros.ars_extensions.text":"安装[魔艺拓展]模组时，可获得[魔源花]系列配饰的【消耗魔源浆果回复魔源的能力】",
+
+"item.wizard_terra_cuiros.curse_injection_station":"§7诅咒注入站",
+"tooltip.wizard_terra_cuiros.curse_injection_station.text":"[诡厄巫法联动]右键获得10min的[诅咒之力]状态，聚晶强效倍率提升50%%，护甲值降低20%%",
+"effect.wizard_terra_cuiros.curse_power": "诅咒之力",
+"effect.wizard_terra_cuiros.curse_power.description":"聚晶强效倍率提升50%%，护甲值降低20%%",
+
+"item.wizard_terra_cuiros.spirit_brooch":"精魂胸针",
+"tooltip.wizard_terra_cuiros.spirit_brooch.text":"穿戴者即使主手未持镰刀，击杀生物也可掉落精魂",
+"item.wizard_terra_cuiros.necklace_of_the_soulstained_edge":"§d魂染镰刃项链",
+"item.wizard_terra_cuiros.necklace_of_the_deliverance_edge":"§d挽魂锋镰项链",
+"tooltip.wizard_terra_cuiros.spirit_spoils.text":"穿戴者击杀生物掉落精魂时，提升精魂的数量",
+
+"item.wizard_terra_cuiros.ichor":"§e灵液",
+"item.confluence.ichor.info":"它有概率在凋灵死亡时掉落。",
+"item.wizard_terra_cuiros.golden_shower":"§e黄金雨",
+"tooltip.wizard_terra_cuiros.golden_shower.text":"造成魔法伤害时会对目标施加10s的灵液III效果(兼容铁魔法、新生魔艺)",
+"item.wizard_terra_cuiros.ichor_arrow":"§e灵液箭",
+"tooltip.wizard_terra_cuiros.ichor_arrow.text":"造成远程伤害时会对目标施加10s的灵液III效果(兼容TACZ)",
+"item.wizard_terra_cuiros.flask_of_ichor":"§e灵液药剂",
+"tooltip.wizard_terra_cuiros.flask_of_ichor.text":"造成近战伤害时会对目标施加10s的灵液III效果",
+"effect.wizard_terra_cuiros.ichor": "灵液",
+"effect.wizard_terra_cuiros.ichor.description":"每级降低目标5点护甲值",
+"tooltip.wizard_terra_cuiros.ichor.text":"灵液:每级效果降低目标5点护甲值",
+
+"item.wizard_terra_cuiros.spirit_altar":"§3精魂工作台",
+"tooltip.wizard_terra_cuiros.spirit_altar.text":"[灵灾联动]右键获得10min的[魂视]状态，击杀生物掉落等级精魂数量提升",
+"effect.wizard_terra_cuiros.spirit_eyes": "魂视",
+"effect.wizard_terra_cuiros.spirit_eyes.description":"每级+2精魂掠夺",
+
+"item.wizard_terra_cuiros.assassin_scope":"§e暗杀瞄准镜",
+"tooltip.wizard_terra_cuiros.assassin_scope.text":"根据距离上一次开枪时间的间隔时间获得增伤，最高在间隔3s时达到50%增伤",
+"item.wizard_terra_cuiros.rapid_fire_scope":"§b速射瞄准镜",
+"tooltip.wizard_terra_cuiros.rapid_fire_scope.text":"连续开枪时获得增伤，最高连续开枪10次时达到20%增伤，5s内未开枪则增伤清除",
+
+"item.wizard_terra_cuiros.rover_drive":"§2钨钢屏障生成仪",
+"tooltip.wizard_terra_cuiros.rover_drive.text":"提供[钨钢屏障IV]状态，受击会消耗状态等级抵消伤害",
+"tooltip.wizard_terra_cuiros.rover_drive.text1":"§a钨钢屏障状态下，每级状态会提供2.5护甲值，同时可抵消1点伤害",
+"tooltip.wizard_terra_cuiros.rover_drive.text2":"§2状态未达4级时，矩阵需要10秒进行充能，充能期间受击会重置计时器",
+
+"effect.wizard_terra_cuiros.rover_shield": "钨钢屏障",
+"effect.wizard_terra_cuiros.rover_shield.description":"每级状态会提供2.5护甲值，同时可抵消1点伤害",
+
+"item.wizard_terra_cuiros.wulfrum_battery":"§a钨钢电池",
+"tooltip.wizard_terra_cuiros.wulfrum_battery.text":"使穿戴者的随从持续获得发光状态",
 
 "item_group.wizard_terra_cuiros.tab":"泰拉饰品拓展"
 }
