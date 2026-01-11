@@ -201,7 +201,7 @@
 "tooltip.wizard_terra_cuiros.ars_extensions.text":"安装[魔艺拓展]模组时，可获得[魔源花]系列配饰的【消耗魔源浆果回复魔源的能力】",
 
 "item.wizard_terra_cuiros.curse_injection_station":"§7诅咒注入站",
-"tooltip.wizard_terra_cuiros.curse_injection_station.text":"[诡厄巫法联动]右键获得10min的[诅咒之力]状态，聚晶强效倍率提升50%%，护甲值降低20%%",
+"tooltip.wizard_terra_cuiros.curse_injection_station.text":"[诡厄巫法联动]右键获得10min的[诅咒之力]状态，聚晶强效倍率提升25%%，护甲值降低20%%",
 "effect.wizard_terra_cuiros.curse_power": "诅咒之力",
 "effect.wizard_terra_cuiros.curse_power.description":"聚晶强效倍率提升50%%，护甲值降低20%%",
 
@@ -234,15 +234,40 @@
 "tooltip.wizard_terra_cuiros.rapid_fire_scope.text":"连续开枪时获得增伤，最高连续开枪10次时达到20%增伤，5s内未开枪则增伤清除",
 
 "item.wizard_terra_cuiros.rover_drive":"§2钨钢屏障生成仪",
-"tooltip.wizard_terra_cuiros.rover_drive.text":"提供[钨钢屏障IV]状态，受击会消耗状态等级抵消伤害",
+"tooltip.wizard_terra_cuiros.rover_drive.text":"提供[钨钢屏障IV]状态，提升护甲值，且受击会消耗状态等级抵消伤害",
 "tooltip.wizard_terra_cuiros.rover_drive.text1":"§a钨钢屏障状态下，每级状态会提供2.5护甲值，同时可抵消1点伤害",
-"tooltip.wizard_terra_cuiros.rover_drive.text2":"§2状态未达4级时，矩阵需要10秒进行充能，充能期间受击会重置计时器",
+"tooltip.wizard_terra_cuiros.rover_drive.text2":"§2状态未达4级时，矩阵需要10秒进行充能，充能期间受击或取下会重置计时器",
+"item.confluence.rover_drive.info":"它有概率在铁傀儡死亡时掉落。",
 
 "effect.wizard_terra_cuiros.rover_shield": "钨钢屏障",
 "effect.wizard_terra_cuiros.rover_shield.description":"每级状态会提供2.5护甲值，同时可抵消1点伤害",
 
 "item.wizard_terra_cuiros.wulfrum_battery":"§a钨钢电池",
 "tooltip.wizard_terra_cuiros.wulfrum_battery.text":"使穿戴者的随从持续获得发光状态",
+
+"item.wizard_terra_cuiros.the_sponge":"化绵留香石",
+"tooltip.wizard_terra_cuiros.the_sponge.text":"§b提供[量子泡沫屏障X]状态，提升护甲值、护甲韧性与伤害减免，且受击会消耗状态等级抵消伤害",
+"tooltip.wizard_terra_cuiros.the_sponge.text1":"量子泡沫屏障状态下，每级状态会提供1.5护甲+1.5护甲韧性+1%%伤害减免，同时可抵消1~3.6点伤害",
+"tooltip.wizard_terra_cuiros.the_sponge.text2":"§9状态未达10级时，该饰品需要9秒进行充能，9s后每秒回复2级状态等级，充能期间受击或取下会重置计时器",
+
+"effect.wizard_terra_cuiros.the_sponge_shield": "量子泡沫屏障",
+"effect.wizard_terra_cuiros.the_sponge_shield.description":"每级状态会提供1.5护甲与1.5护甲韧性，可抵消1~3.6点伤害",
+
+"item.wizard_terra_cuiros.deific_amulet":"§e神圣护符",
+"item.confluence.deific_amulet.tooltip":"增加受到伤害后的无敌时间，相较十字项链提升了50%%时长",
+
+"item.wizard_terra_cuiros.honey_dew":"§6蜂蜜露珠",
+"tooltip.wizard_terra_cuiros.honey_dew.text":"为穿戴者持续提供蜂蜜状态效果",
+"tooltip.wizard_terra_cuiros.honey_dew.text1":"获得非正面buff时，视为+0.2生命再生",
+"tooltip.wizard_terra_cuiros.honey_dew.text2":"潜行时，视为+0.3生命再生",
+
+"item.wizard_terra_cuiros.living_dew":"§9生命露珠",
+
+"item.wizard_terra_cuiros.radiant_ooze":"§e光泥",
+"tooltip.wizard_terra_cuiros.radiant_ooze.text":"根据已损失生命值提升自然生命再生数额，于≤20%生命值时获得额外0.8hp/s的自然生命回复",
+
+"item.wizard_terra_cuiros.ambrosial_ampoule":"§e百草天香瓶",
+
 
 "item_group.wizard_terra_cuiros.tab":"泰拉饰品拓展"
 }

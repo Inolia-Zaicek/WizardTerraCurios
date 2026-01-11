@@ -33,4 +33,5 @@ public class WTCEEffectsRegister {
     public static final RegistryObject<MobEffect> SpiritEyes = INOEFFECT.register("spirit_eyes", SpiritEyesBuff::new);
     public static final RegistryObject<MobEffect> Ichor = INOEFFECT.register("ichor", IchorBuff::new);
     public static final RegistryObject<MobEffect> RoverShield = INOEFFECT.register("rover_shield", RoverShieldBuff::new);
+    public static final RegistryObject<MobEffect> TheSponge = INOEFFECT.register("the_sponge_shield", TheSpongeBuff::new);
 }

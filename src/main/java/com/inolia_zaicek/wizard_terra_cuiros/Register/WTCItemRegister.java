@@ -3,10 +3,9 @@ package com.inolia_zaicek.wizard_terra_cuiros.Register;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.CanUsedBuffItem.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.CelestialOnionItem;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.*;
-import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Armor.RoverDriveItem;
+import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Armor.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Attack.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Functionality.*;
-import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.General.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Magic.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Range.*;
 import com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Summon.*;
@@ -74,32 +73,39 @@ public class WTCItemRegister {
     public static RegistryObject<Item> CelestialShell=registerCommonMaterials(ZeroingITEM,"celestial_shell", CelestialShellItem::new);
     public static RegistryObject<Item> DimensionalSoulArtifact=registerCommonMaterials(ZeroingITEM,"dimensional_soul_artifact", DimensionalSoulArtifactItem::new);
     //战士
-    public static RegistryObject<Item> FlaskOfIchor=registerCommonMaterials(IronItem,"flask_of_ichor", FlaskOfIchorItem::new);
+    public static RegistryObject<Item> FlaskOfIchor=registerCommonMaterials(ZeroingITEM,"flask_of_ichor", FlaskOfIchorItem::new);
     //法师
-    public static RegistryObject<Item> IronManaFlower=registerCommonMaterials(IronItem,"iron_mana_flower", IronManaFlowerItem::new);
-    public static RegistryObject<Item> IronManaCloak=registerCommonMaterials(IronItem,"iron_mana_cloak", IronManaCloakItem::new);
-    public static RegistryObject<Item> IronMagnetFlower=registerCommonMaterials(IronItem,"iron_magnet_flower", IronMagnetFlowerItem::new);
-    public static RegistryObject<Item> IronArcaneFlower=registerCommonMaterials(IronItem,"iron_arcane_flower", IronArcaneFlowerItem::new);
-    public static RegistryObject<Item> IronCelestialMagnet=registerCommonMaterials(IronItem,"iron_celestial_magnet", IronCelestialMagnetItem::new);
-    public static RegistryObject<Item> IronCelestialEmblem=registerCommonMaterials(IronItem,"iron_celestial_emblem", IronCelestialEmblemItem::new);
-    public static RegistryObject<Item> GoldenShower=registerCommonMaterials(IronItem,"golden_shower", GoldenShowerItem::new);
+    public static RegistryObject<Item> IronManaFlower=registerCommonMaterials(ZeroingITEM,"iron_mana_flower", IronManaFlowerItem::new);
+    public static RegistryObject<Item> IronManaCloak=registerCommonMaterials(ZeroingITEM,"iron_mana_cloak", IronManaCloakItem::new);
+    public static RegistryObject<Item> IronMagnetFlower=registerCommonMaterials(ZeroingITEM,"iron_magnet_flower", IronMagnetFlowerItem::new);
+    public static RegistryObject<Item> IronArcaneFlower=registerCommonMaterials(ZeroingITEM,"iron_arcane_flower", IronArcaneFlowerItem::new);
+    public static RegistryObject<Item> IronCelestialMagnet=registerCommonMaterials(ZeroingITEM,"iron_celestial_magnet", IronCelestialMagnetItem::new);
+    public static RegistryObject<Item> IronCelestialEmblem=registerCommonMaterials(ZeroingITEM,"iron_celestial_emblem", IronCelestialEmblemItem::new);
+    public static RegistryObject<Item> GoldenShower=registerCommonMaterials(ZeroingITEM,"golden_shower", GoldenShowerItem::new);
     public static RegistryObject<Item> ChaosStone=registerCommonMaterials(ZeroingITEM,"chaos_stone", ChaosStoneItem::new);
     public static RegistryObject<Item> ManaPolarizer=registerCommonMaterials(ZeroingITEM,"mana_polarizer", ManaPolarizerItem::new);
     public static RegistryObject<Item> SigilOfCalamitas=registerCommonMaterials(ZeroingITEM,"sigil_of_calamitas", SigilOfCalamitasItem::new);
     public static RegistryObject<Item> EtherealTalisman=registerCommonMaterials(ZeroingITEM,"ethereal_talisman", EtherealTalismanItem::new);
     //射手
     public static RegistryObject<Item> ChlorophyteQuiver=registerCommonMaterials(ZeroingITEM,"chlorophyte_quiver", ChlorophyteQuiverItem::new);
-    public static RegistryObject<Item> IchorArrow=registerCommonMaterials(IronItem,"ichor_arrow", IchorArrowItem::new);
+    public static RegistryObject<Item> IchorArrow=registerCommonMaterials(ZeroingITEM,"ichor_arrow", IchorArrowItem::new);
     public static RegistryObject<Item> DeadshotBrooch=registerCommonMaterials(ZeroingITEM,"deadshot_brooch", DeadshotBroochItem::new);
     public static RegistryObject<Item> ElementalQuiver=registerCommonMaterials(ZeroingITEM,"elemental_quiver", ElementalQuiverItem::new);
     //召唤师
     public static RegistryObject<Item> WulfrumBattery=registerCommonMaterials(ZeroingITEM,"wulfrum_battery", WulfrumBatteryItem::new);
-    public static RegistryObject<Item> RoverDrive=registerCommonMaterials(ZeroingITEM,"rover_drive", RoverDriveItem::new);
     public static RegistryObject<Item> SummonerEmblem=registerCommonMaterials(ZeroingITEM,"summoner_emblem", SummonerEmblemItem::new);
     public static RegistryObject<Item> PygmyNecklace=registerCommonMaterials(ZeroingITEM,"pygmy_necklace", PygmyNecklaceItem::new);
     public static RegistryObject<Item> NecromanticScroll=registerCommonMaterials(ZeroingITEM,"necromantic_scroll", NecromanticScrollItem::new);
     public static RegistryObject<Item> HerculesBeetle=registerCommonMaterials(ZeroingITEM,"hercules_beetle", HerculesBeetleItem::new);
     public static RegistryObject<Item> PapyrusScarab=registerCommonMaterials(ZeroingITEM,"papyrus_scarab", PapyrusScarabItem::new);
+    //防御
+    public static RegistryObject<Item> RoverDrive=registerCommonMaterials(ZeroingITEM,"rover_drive", RoverDriveItem::new);
+    public static RegistryObject<Item> TheSponge=registerCommonMaterials(ZeroingITEM,"the_sponge", TheSpongeItem::new);
+    public static RegistryObject<Item> DeificAmulet=registerCommonMaterials(ZeroingITEM,"deific_amulet", DeificAmuletItem::new);
+    public static RegistryObject<Item> HoneyDew=registerCommonMaterials(ZeroingITEM,"honey_dew", HoneyDewItem::new);
+    public static RegistryObject<Item> LivingDew=registerCommonMaterials(ZeroingITEM,"living_dew", LivingDewItem::new);
+    public static RegistryObject<Item> RadiantOoze=registerCommonMaterials(ZeroingITEM,"radiant_ooze", RadiantOozeItem::new);
+    public static RegistryObject<Item> AmbrosialAmpoule=registerCommonMaterials(ZeroingITEM,"ambrosial_ampoule", AmbrosialAmpouleItem::new);
     //功能性
     public static RegistryObject<Item> DiscountCard=registerCommonMaterials(ZeroingITEM,"discount_card", DiscountCardItem::new);
     public static RegistryObject<Item> LuckyCoin=registerCommonMaterials(ZeroingITEM,"lucky_coin", LuckyCoinItem::new);

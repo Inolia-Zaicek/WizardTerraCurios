@@ -64,5 +64,8 @@ public class WTCModJeiPluginMixin {
 
         registration.addItemStackInfo(new ItemStack((ItemLike) WTCItemRegister.Ichor.get()),
                 new Component[]{Component.translatable("item.confluence.ichor.info")});
+
+        registration.addItemStackInfo(new ItemStack((ItemLike) WTCItemRegister.RoverDrive.get()),
+                new Component[]{Component.translatable("item.confluence.rover_drive.info")});
     }
 }

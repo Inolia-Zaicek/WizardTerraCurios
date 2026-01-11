@@ -100,11 +100,35 @@ public class WTCConfig {
     public static final ForgeConfigSpec.DoubleValue WulfrumBattery;
     public static final ForgeConfigSpec.DoubleValue rover_drive_time;
     public static final ForgeConfigSpec.DoubleValue rover_drive_shield;
-    public static final ForgeConfigSpec.DoubleValue rover_drive_armor;
+    public static final ForgeConfigSpec.DoubleValue rover_drive_shield_number;
+    public static final ForgeConfigSpec.DoubleValue the_sponge_time;
+    public static final ForgeConfigSpec.DoubleValue the_sponge_shield;
+    public static final ForgeConfigSpec.DoubleValue the_sponge_shield_time;
+    public static final ForgeConfigSpec.DoubleValue the_sponge_shield_number;
+    public static final ForgeConfigSpec.DoubleValue deific_amulet;
+    public static final ForgeConfigSpec.DoubleValue honey_dew_hp;
+    public static final ForgeConfigSpec.DoubleValue honey_dew_re;
+    public static final ForgeConfigSpec.DoubleValue honey_dew_shift_re;
+    public static final ForgeConfigSpec.DoubleValue honey_dew_buff_re;
+    public static final ForgeConfigSpec.DoubleValue living_dew_hp;
+    public static final ForgeConfigSpec.DoubleValue radiant_ooze_base;
+    public static final ForgeConfigSpec.DoubleValue radiant_ooze_number;
     static {
         //祝福
         BUILDER.push("base");
-        rover_drive_armor = BUILDER.comment("钨钢屏障护盾存在时提供的护甲值").defineInRange("rover_shield_armor",10,0F,2147483647);
+        radiant_ooze_number = BUILDER.comment("光泥每10%生命值回复数额").defineInRange("radiant_ooze_number",0.1,0F,2147483647);
+        radiant_ooze_base = BUILDER.comment("光泥基础回复").defineInRange("radiant_ooze_base",0.4,0F,2147483647);
+        living_dew_hp = BUILDER.comment("生命露珠hp").defineInRange("living_dew_hp",10,0F,2147483647);
+        honey_dew_buff_re = BUILDER.comment("蜂蜜露珠Debuff回血").defineInRange("honey_dew_buff_re",0.2,0F,2147483647);
+        honey_dew_shift_re = BUILDER.comment("蜂蜜露珠潜行回血").defineInRange("honey_dew_shift_re",0.3,0F,2147483647);
+        honey_dew_re = BUILDER.comment("蜂蜜露珠回血").defineInRange("honey_dew_re",0.2,0F,2147483647);
+        honey_dew_hp = BUILDER.comment("蜂蜜露珠hp").defineInRange("honey_dew_hp",6,0F,2147483647);
+        deific_amulet = BUILDER.comment("神圣护符").defineInRange("deific_amulet",50,0F,2147483647);
+        the_sponge_shield_time = BUILDER.comment("量子护盾每秒回复等级").defineInRange("the_sponge_shield_time",2,0F,2147483647);
+        the_sponge_shield_number = BUILDER.comment("量子护盾每级状态可以抵消的伤害").defineInRange("the_sponge_shield_number",3.6,0F,2147483647);
+        the_sponge_shield = BUILDER.comment("量子护盾护盾上限").defineInRange("the_sponge_shield",10,0F,2147483647);
+        the_sponge_time = BUILDER.comment("量子护盾充能时间").defineInRange("the_sponge_time",9,0F,2147483647);
+        rover_drive_shield_number = BUILDER.comment("钨钢屏障每级状态可以抵消的伤害").defineInRange("rover_drive_shield_number",1,0F,2147483647);
         rover_drive_shield = BUILDER.comment("钨钢屏障护盾上限").defineInRange("rover_drive_shield",4,0F,2147483647);
         rover_drive_time = BUILDER.comment("钨钢屏障充能时间").defineInRange("rover_shield_time",10,0F,2147483647);
         assassin_scope_ra = BUILDER.comment("暗杀瞄准镜远攻").defineInRange("assassin_scope_ra",0.1,0F,2147483647);
@@ -145,7 +169,7 @@ public class WTCConfig {
         PapyrusScarab = BUILDER.comment("莎草纸召唤伤害").defineInRange("papyrus_scarab",0.125,0F,2147483647);
         PygmyNecklace = BUILDER.comment("矮人项链召唤伤害").defineInRange("pygmy_necklace",0.05,0F,2147483647);
         SummonerEmblem = BUILDER.comment("召唤师徽章").defineInRange("summoner_emblem",0.075,0F,2147483647);
-        WulfrumBattery = BUILDER.comment("钨钢电池").defineInRange("summoner_emblem",0.035,0F,2147483647);
+        WulfrumBattery = BUILDER.comment("钨钢电池").defineInRange("wulfrum_battery",0.035,0F,2147483647);
         TheCommunityKillCount = BUILDER.comment("最大记入的击杀数").defineInRange("the_community_kill_count",20,0,2147483647);
         OverMaxACCESSORIES = BUILDER.comment("天体洋葱所能提供的最大配饰栏位").defineInRange("over_max_accessories",8,6,100);
         TheCommunityUpNumber = BUILDER.comment("每个击杀数的增长幅度").define("the_community_up_number",1F);
@@ -192,10 +216,10 @@ public class WTCConfig {
         BUILDER.pop();
 
         BUILDER.push("goety");
-        DarkFocus = BUILDER.comment("黑暗聚晶提升幅度").defineInRange("dark_focus_potency_up",0.5F,0F,2147483647F);
-        SoulFoucs = BUILDER.comment("灵魂聚晶提升幅度").defineInRange("soul_focus_potency_up",0.75F,0F,2147483647F);
-        WarpedFoucs = BUILDER.comment("诡魂聚晶提升幅度").defineInRange("warped_focus_potency_up",1.25F,0F,2147483647F);
-        GoetyFoucs = BUILDER.comment("诡厄聚晶提升幅度").defineInRange("goety_focus_potency_up",1.5F,0F,2147483647F);
+        DarkFocus = BUILDER.comment("黑暗聚晶提升幅度").defineInRange("dark_focus_potency_up",0.25F,0F,2147483647F);
+        SoulFoucs = BUILDER.comment("灵魂聚晶提升幅度").defineInRange("soul_focus_potency_up",0.5F,0F,2147483647F);
+        WarpedFoucs = BUILDER.comment("诡魂聚晶提升幅度").defineInRange("warped_focus_potency_up",0.75F,0F,2147483647F);
+        GoetyFoucs = BUILDER.comment("诡厄聚晶提升幅度").defineInRange("goety_focus_potency_up",1,0F,2147483647F);
         HauntedFocus = BUILDER.comment("缠魂聚晶汲取倍率").defineInRange("haunted_focus_soul_absorb",0.2F,0F,2147483647F);
         MaxAbsorb = BUILDER.comment("汲取上限").defineInRange("max_absorb",0.1F,0F,100);
         AbsorbMax = BUILDER.comment("汲取最大回复上限").defineInRange("absorb_max",0.75F,0F,1);

@@ -65,6 +65,12 @@
 
     {"id":"wizard_terra_cuiros:rover_drive","required":false},
     {"id":"wizard_terra_cuiros:wulfrum_battery","required":false},
-    {"id":"wizard_terra_cuiros:the_sponge","required":false}
+    {"id":"wizard_terra_cuiros:the_sponge","required":false},
+
+    {"id":"wizard_terra_cuiros:deific_amulet","required":false},
+    {"id":"wizard_terra_cuiros:honey_dew","required":false},
+    {"id":"wizard_terra_cuiros:living_dew","required":false},
+    {"id":"wizard_terra_cuiros:radiant_ooze","required":false},
+    {"id":"wizard_terra_cuiros:ambrosial_ampoule","required":false}
   ]
 }

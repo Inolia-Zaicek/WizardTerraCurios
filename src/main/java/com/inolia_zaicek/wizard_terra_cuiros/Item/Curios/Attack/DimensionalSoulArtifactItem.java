@@ -1,4 +1,4 @@
-package com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.General;
+package com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Attack;
 
 import com.inolia_zaicek.wizard_terra_cuiros.Register.WTCItemRegister;
 import com.inolia_zaicek.wizard_terra_cuiros.Util.WTCUtil;
@@ -17,9 +17,9 @@ import top.theillusivec4.curios.api.type.capability.ICurioItem;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class NeptunesShellItem extends Item implements ModRarity.Expert,ICurioItem {
-    public NeptunesShellItem() {
-        super((new Item.Properties()).stacksTo(1).rarity(ModRarity.PINK).fireResistant());
+public class DimensionalSoulArtifactItem extends Item implements ModRarity.Expert,ICurioItem {
+    public DimensionalSoulArtifactItem() {
+        super((new Properties()).stacksTo(1).rarity(ModRarity.EXPERT).fireResistant());
     }
     public @NotNull Component getName(@NotNull ItemStack pStack) {
         return this.withColor(this.getDescriptionId());
@@ -30,13 +30,14 @@ public class NeptunesShellItem extends Item implements ModRarity.Expert,ICurioIt
     }
 
     @Override
+    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
+        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.DimensionalSoulArtifact.get());
+    }
+
+    @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.wizard_terra_cuiros.neptunes_shell.text")
+        pTooltipComponents.add(Component.translatable("tooltip.wizard_terra_cuiros.dimensional_soul_artifact.text")
                 .withStyle(style -> style.withColor(ChatFormatting.WHITE)));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
-    }
-    @Override
-    public boolean canEquip(SlotContext slotContext, ItemStack stack) {
-        return WTCUtil.noSameCurio(slotContext.entity(), WTCItemRegister.NeptunesShell.get());
     }
 }

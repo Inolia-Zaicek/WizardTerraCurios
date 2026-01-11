@@ -12,6 +12,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -26,6 +27,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import java.util.Objects;
 
 import static com.inolia_zaicek.wizard_terra_cuiros.Event.HurtEvent.rover_drive_time_nbt;
+import static com.inolia_zaicek.wizard_terra_cuiros.Event.HurtEvent.the_sponge_time_nbt;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE,modid = WizardTerraCurios.MODID)
 public class TickEvent {
@@ -50,22 +52,53 @@ public class TickEvent {
             livingEntity.addEffect(new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,40,0));
         }
         if (livingEntity.level().getGameTime() % 20L == 0) {
-            //有钨钢电池，开始计时【客户端卡显示了】
-            if (WTCUtil.isCurioEquipped(livingEntity, WTCItemRegister.RoverDrive.get())){
-                if (livingEntity instanceof ServerPlayer serverPlayer) {
-                    serverPlayer.sendSystemMessage(Component.translatable(String.valueOf(livingEntity.getPersistentData().getInt(rover_drive_time_nbt)))
-                            .withStyle(ChatFormatting.BLUE));
-                }
+            //有钨钢电池，开始计时
+            if (WTCUtil.isCurioEquipped(livingEntity, WTCItemRegister.RoverDrive.get()) ){
                 //提供护盾值
-                if(livingEntity.getPersistentData().getInt(rover_drive_time_nbt)>=10&&!livingEntity.level().isClientSide()){
-                    livingEntity.addEffect(new MobEffectInstance(WTCEEffectsRegister.RoverShield.get(), 20 * 60, 3));
+                if(livingEntity.getPersistentData().getInt(rover_drive_time_nbt)>=WTCConfig.rover_drive_time.get() ){
+                    if(!livingEntity.level().isClientSide()) {
+                        livingEntity.addEffect(new MobEffectInstance(WTCEEffectsRegister.RoverShield.get(), 20 * 60, (int) (WTCConfig.rover_drive_shield.get()*1)-1));
+                    }
                 }else {
                     //每tick计数器+1
                     livingEntity.getPersistentData().putInt(rover_drive_time_nbt, livingEntity.getPersistentData().getInt(rover_drive_time_nbt)+1);
                 }
                 //没有钨钢电池直接清除buff
             }else{
-                livingEntity.removeEffect(WTCEEffectsRegister.RoverShield.get());
+                if(!livingEntity.level().isClientSide()) {
+                    livingEntity.removeEffect(WTCEEffectsRegister.RoverShield.get());
+                }
+            }
+            //有化棉，开始计时
+            if (WTCUtil.isCurioEquipped(livingEntity, WTCItemRegister.TheSponge.get()) ){
+                //计数器满9s
+                if(livingEntity.getPersistentData().getInt(the_sponge_time_nbt)>=WTCConfig.the_sponge_time.get() ){
+                    if(!livingEntity.level().isClientSide()) {
+                        //回复等级：
+                        //有状态
+                        if(livingEntity.hasEffect(WTCEEffectsRegister.TheSponge.get()) ) {
+                            int buffLevel = Objects.requireNonNull(livingEntity.getEffect(WTCEEffectsRegister.TheSponge.get())).getAmplifier();
+                            livingEntity.addEffect(new MobEffectInstance(WTCEEffectsRegister.TheSponge.get(), 20 * 60,
+                                    (int) Math.min(
+                                            //上限————————————————————————————————————————————————当前等级+(配置文件-1)
+                                    ((WTCConfig.the_sponge_shield.get() * 1)-1) , buffLevel+WTCConfig.the_sponge_shield_time.get()-1
+                            )));
+                        }else{
+                            livingEntity.addEffect(new MobEffectInstance(WTCEEffectsRegister.TheSponge.get(), 20 * 60,
+                                    (int) Math.min(
+                                    ((WTCConfig.the_sponge_shield.get() * 1)-1) , WTCConfig.the_sponge_shield_time.get()-1
+                            )));
+                        }
+                    }
+                }else {
+                    //每tick计数器+1
+                    livingEntity.getPersistentData().putInt(the_sponge_time_nbt, livingEntity.getPersistentData().getInt(the_sponge_time_nbt)+1);
+                }
+                //没有化棉直接清除buff
+            }else{
+                if(!livingEntity.level().isClientSide()) {
+                    livingEntity.removeEffect(WTCEEffectsRegister.TheSponge.get());
+                }
             }
             //实体是随从————钨钢电池发光
             if(livingEntity instanceof OwnableEntity ownableEntity&&ownableEntity.getOwner()!=null){
@@ -89,6 +122,22 @@ public class TickEvent {
                     if (livingEntity.hasEffect(WTCEEffectsRegister.ManaSickness.get()) ) {
                         regeneration -= WTCConfig.ChaosStone.get();
                     }
+                }
+            }
+            //蜂蜜
+            if (WTCUtil.isCurioEquipped(livingEntity, WTCItemRegister.HoneyDew.get())
+                    ||WTCUtil.isCurioEquipped(livingEntity, WTCItemRegister.LivingDew.get())
+                    ||WTCUtil.isCurioEquipped(livingEntity, WTCItemRegister.AmbrosialAmpoule.get())
+            ){
+                livingEntity.addEffect(new MobEffectInstance(WTCEEffectsRegister.Honey.get(),100,0));
+                for (MobEffectInstance effect : livingEntity.getActiveEffects()) {
+                    // 判断是否有负面状态
+                    if (!effect.getEffect().getCategory().equals(MobEffectCategory.BENEFICIAL)) {
+                        regeneration += WTCConfig.honey_dew_buff_re.get();
+                    }
+                }
+                if(livingEntity.isShiftKeyDown()){
+                    regeneration += WTCConfig.honey_dew_shift_re.get();
                 }
             }
             //谐振

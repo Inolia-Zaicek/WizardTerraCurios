@@ -1,4 +1,4 @@
-package com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.General;
+package com.inolia_zaicek.wizard_terra_cuiros.Item.Curios.Attack;
 
 import com.google.common.collect.Multimap;
 import com.inolia_zaicek.wizard_terra_cuiros.Config.WTCConfig;
