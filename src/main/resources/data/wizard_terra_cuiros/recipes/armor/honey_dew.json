@@ -1,0 +1,17 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:bottled_honey"
+        },
+        {
+            "item": "minecraft:moss_block"
+        },
+        {
+            "item": "minecraft:glow_berries"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:honey_dew"
+    }
+}

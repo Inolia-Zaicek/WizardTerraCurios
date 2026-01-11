@@ -1,0 +1,17 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "minecraft:glowstone_dust"
+        },
+        {
+            "item": "minecraft:slime_ball"
+        },
+        {
+            "item": "minecraft:glass_bottle"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:radiant_ooze"
+    }
+}

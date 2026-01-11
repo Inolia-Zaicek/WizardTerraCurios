@@ -1,0 +1,23 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:rover_drive"
+        },
+        {
+            "item": "wizard_terra_cuiros:celestial_onion"
+        },
+        {
+            "item": "confluence:demon_heart"
+        },
+        {
+            "item": "minecraft:totem_of_undying"
+        },
+        {
+            "item": "minecraft:nether_star"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:the_sponge"
+    }
+}

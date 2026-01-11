@@ -1,0 +1,17 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "confluence:star_veil"
+        },
+        {
+            "item": "confluence:demon_heart"
+        },
+        {
+            "item": "minecraft:nether_star"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:deific_amulet"
+    }
+}

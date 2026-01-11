@@ -1,0 +1,17 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:honey_dew"
+        },
+        {
+            "item": "minecraft:ghast_tear"
+        },
+        {
+            "item": "minecraft:glistering_melon_slice"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:living_dew"
+    }
+}

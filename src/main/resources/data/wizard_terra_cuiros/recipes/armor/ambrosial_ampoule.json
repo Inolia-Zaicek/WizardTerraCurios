@@ -1,0 +1,20 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:living_dew"
+        },
+        {
+            "item": "wizard_terra_cuiros:radiant_ooze"
+        },
+        {
+            "item": "minecraft:netherite_ingot"
+        },
+        {
+            "item": "minecraft:dragon_breath"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:ambrosial_ampoule"
+    }
+}

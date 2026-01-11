@@ -143,5 +143,103 @@
 "effect.wizard_terra_cuiros.the_bast_defense.description":"Each level increases armor by 5",
 "effect.wizard_terra_cuiros.strategist.description":"Each level increases summon damage by 5%",
 "effect.wizard_terra_cuiros.bewitched.description":"Each level increases summon damage by 5%",
-"effect.wizard_terra_cuiros.mana_sickness.description":"Reduces Iron Magic spell damage by 25% (if equipped with Chaos Stone, reduces natural life regeneration by 2 points)"
+"effect.wizard_terra_cuiros.mana_sickness.description":"Reduces Iron Magic spell damage by 25% (if equipped with Chaos Stone, reduces natural life regeneration by 2 points)",
+
+"item.wizard_terra_cuiros.dark_focus":"§7Dark Crystalline Core",
+"tooltip.wizard_terra_cuiros.gotey_potency_amplifier.text":"When casting with Crystalline, the level of potent effect increases by *[Crystalline potency multiplier] attribute",
+"tooltip.wizard_terra_cuiros.gotey_potency_amplifier.text2":"The final effective level is the integer part, and it is valid only if the Crystalline itself has a level of effect",
+"item.wizard_terra_cuiros.soul_focus":"§bSoul Crystalline",
+"item.wizard_terra_cuiros.warped_focus":"§eEerie Soul Crystalline",
+"item.wizard_terra_cuiros.goety_focus":"Evil and Desolate Crystalline",
+"wizard_terra_cuiros.gotey_potency_amplifier":"Crystalline Effect Multiplier",
+
+"item.wizard_terra_cuiros.haunted_focus":"§eHaunted Crystalline",
+"tooltip.wizard_terra_cuiros.goety_soul_absorb.text":"Deals damage and recovers [damage amount * Soul Absorption attribute] of soul",
+"tooltip.wizard_terra_cuiros.goety_soul_absorb.text2":"In default configuration, at most, it recovers 10%% of the player's current container soul, and does not exceed 75%% of the soul capacity of the container",
+"wizard_terra_cuiros.goety_soul_absorb":"Soul Absorption",
+
+"item.wizard_terra_cuiros.brewer_hat":"§9Brewer's Hat",
+"tooltip.wizard_terra_cuiros.brewer_hat.text":"Drinking brewing or potions has a 10%% chance not to consume brewing",
+
+"item.wizard_terra_cuiros.master_brewer_hat":"§5Master Brewer's Hat",
+"tooltip.wizard_terra_cuiros.master_brewer_hat.text":"Drinking brewing or potions has a 15%% chance not to consume brewing",
+
+"item.wizard_terra_cuiros.dimensional_soul_artifact":"Dimensional Soul Artifact",
+"tooltip.wizard_terra_cuiros.dimensional_soul_artifact.text":"Damage dealt by the wearer increases by 20%%, while damage taken by the wearer also increases by 15%%",
+"item.confluence.dimensional_soul_artifact.info":"It has a low probability to generate in End City chests.",
+
+"item.wizard_terra_cuiros.sigil_of_calamitas":"§4Calamity Sigil",
+
+"item.wizard_terra_cuiros.ethereal_talisman":"Ethereal Talisman",
+"tooltip.wizard_terra_cuiros.ars_extensions.text":"When installing the [Magic Expansion] mod, you can obtain [Magic Source Flower] accessory series with [Consume Magic Source Berries to Recover Magic Source] ability",
+
+"item.wizard_terra_cuiros.curse_injection_station":"§7Curse Injection Station",
+"tooltip.wizard_terra_cuiros.curse_injection_station.text":"[Desolate Witchcraft Linkage] Right-click to gain 10min of [Curse Power] status, Crystalline effect multiplier increases by 25%%, armor value decreases by 20%%",
+"effect.wizard_terra_cuiros.curse_power": "Curse Power",
+"effect.wizard_terra_cuiros.curse_power.description":"Crystalline effect multiplier increases by 50%%, armor value decreases by 20%%",
+
+"item.wizard_terra_cuiros.spirit_brooch":"Spirit Brooch",
+"tooltip.wizard_terra_cuiros.spirit_brooch.text":"Even if the main hand does not hold a sickle, kills by the wearer can drop pure soul",
+"item.wizard_terra_cuiros.necklace_of_the_soulstained_edge":"§dSoul-Stained Sickle Necklace",
+"item.wizard_terra_cuiros.necklace_of_the_deliverance_edge":"§dSoul-Delivering sickle Necklace",
+"tooltip.wizard_terra_cuiros.spirit_spoils.text":"Increases the quantity of pure souls dropped when the wearer kills a creature",
+
+"item.wizard_terra_cuiros.ichor":"§eSpirit Fluid",
+"item.confluence.ichor.info":"It has a chance to drop when wither boss dies.",
+"item.wizard_terra_cuiros.golden_shower":"§eGolden Rain",
+"tooltip.wizard_terra_cuiros.golden_shower.text":"Deals magic damage and applies Spirit Fluid III effect for 10s to the target (compatible with Iron Magic, Rebirth Magic Art)",
+"item.wizard_terra_cuiros.ichor_arrow":"§eSpirit Fluid Arrow",
+"tooltip.wizard_terra_cuiros.ichor_arrow.text":"When dealing ranged damage, applies Spirit Fluid III effect for 10s to the target (compatible with TACZ)",
+"item.wizard_terra_cuiros.flask_of_ichor":"§eSpirit Fluid Flask",
+"tooltip.wizard_terra_cuiros.flask_of_ichor.text":"When dealing melee damage, applies Spirit Fluid III effect for 10s to the target",
+"effect.wizard_terra_cuiros.ichor": "Spirit Fluid",
+"effect.wizard_terra_cuiros.ichor.description":"Reduces target's armor by 5 points per level",
+"tooltip.wizard_terra_cuiros.ichor.text":"Spirit Fluid: Each level reduces target's armor by 5 points",
+
+"item.wizard_terra_cuiros.spirit_altar":"§3Spirit Soul Altar",
+"tooltip.wizard_terra_cuiros.spirit_altar.text":"[Spirit Disaster Linkage] Right-click to gain 10min of [Soul Vision] status, increased level of soul drops upon killing creatures",
+"effect.wizard_terra_cuiros.spirit_eyes": "Soul Vision",
+"effect.wizard_terra_cuiros.spirit_eyes.description":"+2 pure soul looting per level",
+
+"item.wizard_terra_cuiros.assassin_scope":"§eAssassination Scope",
+"tooltip.wizard_terra_cuiros.assassin_scope.text":"Gains bonus damage based on the time interval since the last shot, reaching 50%% bonus damage at 3 seconds",
+"item.wizard_terra_cuiros.rapid_fire_scope":"§bRapid Fire Scope",
+"tooltip.wizard_terra_cuiros.rapid_fire_scope.text":"Gains bonus damage when firing repeatedly, reaching 20%% bonus damage after 10 consecutive shots, bonus resets if no shot within 5 seconds",
+
+"item.wizard_terra_cuiros.rover_drive":"§2Tungsten Steel Barrier Generator",
+"tooltip.wizard_terra_cuiros.rover_drive.text":"Provides [Tungsten Steel Barrier IV] status, increases armor, and consumes status level to offset damage when hit",
+"tooltip.wizard_terra_cuiros.rover_drive.text1":"§aUnder Tungsten Steel Barrier status, each level provides 2.5 armor and 1 point of damage offset",
+"tooltip.wizard_terra_cuiros.rover_drive.text2":"§2When status is below level 4, the matrix requires 10 seconds to charge, taking damage or removing it during charging will reset the timer",
+"item.confluence.rover_drive.info":"It has a probability to drop when an iron golem dies.",
+
+"effect.wizard_terra_cuiros.rover_shield": "Tungsten Steel Barrier",
+"effect.wizard_terra_cuiros.rover_shield.description":"Each level of the status provides 2.5 armor and 1 point of damage offset",
+
+"item.wizard_terra_cuiros.wulfrum_battery":"§aWulfrum Battery",
+"tooltip.wizard_terra_cuiros.wulfrum_battery.text":"Allows the wearer's followers to maintain a glowing state continuously",
+
+"item.wizard_terra_cuiros.the_sponge":"Resin Aromatic Stone",
+"tooltip.wizard_terra_cuiros.the_sponge.text":"§bProvides [Quantum Foam Barrier X] status, increasing armor, armor toughness, and damage reduction, and consuming status level when hit",
+"tooltip.wizard_terra_cuiros.the_sponge.text1":"Under Quantum Foam Barrier status, each level provides 1.5 armor, 1.5 armor toughness, and 1%% damage reduction, which can offset 1~3.6 damage points",
+"tooltip.wizard_terra_cuiros.the_sponge.text2":"§9When level is below 10, this item needs 9 seconds to charge, after 9 seconds, it recovers 2 levels of status per second. Damage or removal during charging resets the timer.",
+
+"effect.wizard_terra_cuiros.the_sponge_shield": "Quantum Foam Barrier",
+"effect.wizard_terra_cuiros.the_sponge_shield.description":"Each level provides 1.5 armor and 1.5 armor toughness, and can offset 1~3.6 damage points",
+
+"item.wizard_terra_cuiros.deific_amulet":"§eSacred Amulet",
+"item.confluence.deific_amulet.tooltip":"Increases invincibility duration after taking damage, with a 50%% longer duration than the Cross Necklace",
+
+"item.wizard_terra_cuiros.honey_dew":"§6Honey Dew",
+"tooltip.wizard_terra_cuiros.honey_dew.text":"Continuously grants Honey status effect to the wearer",
+"tooltip.wizard_terra_cuiros.honey_dew.text1":"When gaining a non-positive buff, it counts as +0.2 health regeneration",
+"tooltip.wizard_terra_cuiros.honey_dew.text2":"When sneaking, it counts as +0.3 health regeneration",
+
+"item.wizard_terra_cuiros.living_dew":"§9Living Dew",
+
+"item.wizard_terra_cuiros.radiant_ooze":"§eRadiant Mud",
+"tooltip.wizard_terra_cuiros.radiant_ooze.text":"Increases natural health regeneration based on lost health, providing an extra 0.8hp/s when at or below 20% health",
+
+"item.wizard_terra_cuiros.ambrosial_ampoule":"§eAmbrosial Bottled Incense",
+
+"item_group.wizard_terra_cuiros.tab":"Terra Accessories Expansion"
 }
