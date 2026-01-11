@@ -25,7 +25,7 @@ import static net.minecraft.tags.DamageTypeTags.WITCH_RESISTANT_TO;
 public class HurtEvent {
     //钨钢屏障计时器
     public static final String rover_drive_time_nbt = WizardTerraCurios.MODID + ":rover_drive_time";
-    public static final String rover_drive_shield_nbt = WizardTerraCurios.MODID + ":rover_drive_level";
+    public static final String rover_drive_level_nbt = WizardTerraCurios.MODID + ":rover_drive_level";
     @SubscribeEvent(priority = EventPriority.HIGHEST)
     public static void hurt(LivingHurtEvent event) {
             LivingEntity attacked = event.getEntity();
@@ -44,18 +44,10 @@ public class HurtEvent {
                     if(baseDamage<=buffLevel){
                         //如果是3.5，4伤害，那就直接扣干净（int不留余数，没问题）
                         int finalBuffLevel = (int) (buffLevel-baseDamage);
-                        if( attacked.level().isClientSide() ){
-                            attacked.removeEffect(WTCEEffectsRegister.RoverShield.get());
-                            //新的buff等级添加【前提是剩余状态等级>1
-                            if(finalBuffLevel>=1) {
-                                attacked.addEffect(new MobEffectInstance(WTCEEffectsRegister.RoverShield.get(), 20 * 60, finalBuffLevel - 1));
-                            }
-                        }else{
-                            attacked.removeEffect(WTCEEffectsRegister.RoverShield.get());
-                            //新的buff等级添加【前提是剩余状态等级>1
-                            if(finalBuffLevel>=1) {
-                                attacked.addEffect(new MobEffectInstance(WTCEEffectsRegister.RoverShield.get(), 20 * 60, finalBuffLevel - 1));
-                            }
+                        attacked.removeEffect(WTCEEffectsRegister.RoverShield.get());
+                        //新的buff等级添加【前提是剩余状态等级>1
+                        if(finalBuffLevel>=1) {
+                            attacked.addEffect(new MobEffectInstance(WTCEEffectsRegister.RoverShield.get(), 20 * 60, finalBuffLevel - 1));
                         }
                         baseDamage = 0;
                         fixedNumber = 0;
