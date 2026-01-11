@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "goety"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:warped_focus"
+        },
+        {
+            "item": "goety:unholy_blood"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:goety_focus"
+    }
+}

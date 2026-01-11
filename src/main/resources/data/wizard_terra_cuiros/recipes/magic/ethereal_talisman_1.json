@@ -1,0 +1,29 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "ars_extensions"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:sigil_of_calamitas"
+        },
+        {
+            "item": "wizard_terra_cuiros:celestial_onion"
+        },
+        {
+            "item": "ars_extensions:ars_mana_flower"
+        },
+        {
+            "item": "minecraft:totem_of_undying"
+        },
+        {
+            "item": "minecraft:nether_star"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:ethereal_talisman"
+    }
+}

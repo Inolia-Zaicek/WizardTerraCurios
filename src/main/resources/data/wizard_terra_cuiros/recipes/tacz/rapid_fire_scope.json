@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "tacz"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "confluence:rifle_scope"
+        },
+        {
+            "item": "confluence:demon_heart"
+        },
+        {
+            "item": "confluence:destroyer_emblem"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:rapid_fire_scope"
+    }
+}

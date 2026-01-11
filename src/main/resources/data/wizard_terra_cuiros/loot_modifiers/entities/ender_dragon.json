@@ -1,0 +1,14 @@
+{
+  "type": "wizard_terra_cuiros:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/ender_dragon"
+    }
+  ],
+  "chance": 1,
+  "items": [
+    "wizard_terra_cuiros:chaos_stone",
+    "wizard_terra_cuiros:celestial_onion"
+  ]
+}

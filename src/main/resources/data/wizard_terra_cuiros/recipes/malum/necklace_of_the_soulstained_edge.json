@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "malum"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "malum:necklace_of_the_narrow_edge"
+        },
+        {
+            "item": "malum:soul_stained_steel_ingot"
+        },
+        {
+            "item": "malum:ring_of_esoteric_spoils"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:necklace_of_the_soulstained_edge"
+    }
+}

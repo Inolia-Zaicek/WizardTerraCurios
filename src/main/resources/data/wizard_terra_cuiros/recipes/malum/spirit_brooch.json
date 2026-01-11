@@ -1,0 +1,41 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "malum"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "malum:runic_brooch"
+        },
+        {
+            "item": "malum:sacred_spirit"
+        },
+        {
+            "item": "malum:wicked_spirit"
+        },
+        {
+            "item": "malum:arcane_spirit"
+        },
+        {
+            "item": "malum:eldritch_spirit"
+        },
+        {
+            "item": "malum:earthen_spirit"
+        },
+        {
+            "item": "malum:infernal_spirit"
+        },
+        {
+            "item": "malum:aerial_spirit"
+        },
+        {
+            "item": "malum:aqueous_spirit"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:spirit_brooch"
+    }
+}

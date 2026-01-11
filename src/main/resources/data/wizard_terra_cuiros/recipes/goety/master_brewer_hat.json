@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "goety"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:brewer_hat"
+        },
+        {
+            "item": "goety:witch_hat_hedge"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:master_brewer_hat"
+    }
+}

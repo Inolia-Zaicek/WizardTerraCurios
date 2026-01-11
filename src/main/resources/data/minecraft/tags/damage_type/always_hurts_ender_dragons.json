@@ -1,0 +1,13 @@
+{
+ "values":[
+  "wizard_terra_cuiros:truedamage",
+  "wizard_terra_cuiros:dotdamage",
+  "wizard_terra_cuiros:tickdamage",
+  "wizard_terra_cuiros:tickmdamage",
+  "wizard_terra_cuiros:tick_fire_damage",
+  "wizard_terra_cuiros:tick_freeze_damage",
+  "wizard_terra_cuiros:tick_lightning_damage",
+  "wizard_terra_cuiros:tick_poison_damage",
+  "wizard_terra_cuiros:tick_wither_damage"
+ ]
+}

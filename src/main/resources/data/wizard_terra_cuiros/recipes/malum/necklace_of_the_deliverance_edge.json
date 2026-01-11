@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "malum"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:necklace_of_the_soulstained_edge"
+        },
+        {
+            "item": "malum:malignant_pewter_ingot"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:necklace_of_the_deliverance_edge"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "confluence:warrior_emblem"
+        },
+        {
+            "item": "confluence:sorcerer_emblem"
+        },
+        {
+            "item": "confluence:ranger_emblem"
+        },
+        {
+            "item": "wizard_terra_cuiros:summoner_emblem"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:uniter_emblem"
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABC",
+    "HID",
+    "GFE"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:storage_blocks/redstone"
+    },
+    "B": {
+      "tag": "forge:storage_blocks/copper"
+    },
+    "C": {
+      "tag": "forge:storage_blocks/gold"
+    },
+    "D": {
+      "tag": "forge:storage_blocks/emerald"
+    },
+    "E": {
+      "tag": "forge:storage_blocks/diamond"
+    },
+    "F": {
+      "tag": "forge:storage_blocks/lapis"
+    },
+    "G": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "H": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "I": {
+      "item": "minecraft:amethyst_cluster"
+    }
+  },
+  "result": {
+    "item": "wizard_terra_cuiros:the_community",
+    "count": 1
+  }
+}

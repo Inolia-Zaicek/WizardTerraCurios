@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:gold_ring"
+        },
+        {
+            "item": "wizard_terra_cuiros:lucky_coin"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:coin_ring"
+    }
+}

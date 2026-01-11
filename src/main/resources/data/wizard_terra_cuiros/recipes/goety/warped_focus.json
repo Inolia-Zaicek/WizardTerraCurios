@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "goety"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:soul_focus"
+        },
+        {
+            "item": "wizard_terra_cuiros:celestial_onion"
+        },
+        {
+            "item": "goety:soul_ruby"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:warped_focus"
+    }
+}

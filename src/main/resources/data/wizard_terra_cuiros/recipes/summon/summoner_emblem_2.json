@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "confluence:warrior_emblem"
+        },
+        {
+            "tag": "forge:gems/amethyst"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:summoner_emblem",
+        "count": 1
+    }
+}

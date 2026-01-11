@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "confluence:magic_quiver"
+        },
+        {
+            "item": "minecraft:warped_planks"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:arrow_stand"
+    }
+}

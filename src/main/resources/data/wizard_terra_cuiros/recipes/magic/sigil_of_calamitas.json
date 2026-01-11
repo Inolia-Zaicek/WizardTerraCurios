@@ -1,0 +1,14 @@
+{
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:iron_celestial_emblem"
+        },
+        {
+            "item": "confluence:demon_heart"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:sigil_of_calamitas"
+    }
+}

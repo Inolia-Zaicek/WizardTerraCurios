@@ -1,0 +1,20 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "minecraft:ghast_tear"
+        },
+        {
+            "item": "minecraft:lantern"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:heart_lantern"
+    }
+}

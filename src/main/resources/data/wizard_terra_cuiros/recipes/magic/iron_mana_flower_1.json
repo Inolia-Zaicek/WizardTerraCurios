@@ -1,0 +1,29 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "irons_spellbooks"
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ABA",
+        "ACA",
+        "AAA"
+    ],
+    "key": {
+        "A": {
+            "item": "irons_spellbooks:arcane_essence"
+        },
+        "B": {
+            "item": "minecraft:blue_orchid"
+        },
+        "C": {
+            "item": "minecraft:diamond"
+        }
+    },
+    "result": {
+        "item": "wizard_terra_cuiros:iron_mana_flower",
+        "count": 1
+    }
+}

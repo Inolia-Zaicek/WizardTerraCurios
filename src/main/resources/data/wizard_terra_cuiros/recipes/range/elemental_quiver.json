@@ -1,0 +1,32 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:deadshot_brooch"
+        },
+        {
+            "item": "wizard_terra_cuiros:chlorophyte_quiver"
+        },
+        {
+            "item": "wizard_terra_cuiros:celestial_onion"
+        },
+        {
+            "item": "minecraft:blaze_rod"
+        },
+        {
+            "item": "minecraft:blue_ice"
+        },
+        {
+            "item": "minecraft:amethyst_shard"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:elemental_quiver"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "goety"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "goety:empty_focus"
+        },
+        {
+            "item": "goety:dark_ingot"
+        },
+        {
+            "item": "goety:haunted_mirror"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:haunted_focus"
+    }
+}

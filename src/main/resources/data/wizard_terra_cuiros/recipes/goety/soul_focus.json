@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "goety"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "wizard_terra_cuiros:dark_focus"
+        },
+        {
+            "item": "confluence:demon_heart"
+        },
+        {
+            "item": "goety:ominous_orb"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:soul_focus"
+    }
+}

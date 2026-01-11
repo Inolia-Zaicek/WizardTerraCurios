@@ -1,0 +1,23 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "confluence"
+        }
+    ],
+    "type": "confluence:workshop",
+    "ingredients": [
+        {
+            "item": "confluence:stalkers_quiver"
+        },
+        {
+            "item": "confluence:demon_heart"
+        },
+        {
+            "item": "minecraft:spore_blossom"
+        }
+    ],
+    "result": {
+        "item": "wizard_terra_cuiros:chlorophyte_quiver"
+    }
+}

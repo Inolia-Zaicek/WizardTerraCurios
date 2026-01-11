@@ -1,0 +1,13 @@
+{
+  "type": "wizard_terra_cuiros:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/pillager"
+    }
+  ],
+  "chance": 0.15,
+  "items": [
+    "wizard_terra_cuiros:lucky_coin"
+  ]
+}
